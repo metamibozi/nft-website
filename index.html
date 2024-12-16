@@ -6,6 +6,7 @@
     <meta name="description" content="Explore the exclusive CONSECTRA NFT Collection, showcasing unique digital art pieces and their inspiring stories.">
     <title>CONSECTRA NFT Collection</title>
     <style>
+        /* Genel Ayarlar */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -24,30 +25,33 @@
             margin: 0;
             font-size: 2.5em;
         }
+
+        /* Slider */
         .slider {
             position: relative;
-            overflow: hidden;
-            max-width: 100%;
+            width: 100%;
             height: 300px;
-            margin: 20px 0;
+            overflow: hidden;
         }
         .slides {
             display: flex;
-            width: 400%;
             animation: slide 20s infinite;
         }
         .slides img {
-            width: 25%;
+            width: 100%;
             height: 300px;
             object-fit: cover;
         }
+
         @keyframes slide {
-            0% { transform: translateX(0); }
-            25% { transform: translateX(-100%); }
-            50% { transform: translateX(-200%); }
-            75% { transform: translateX(-300%); }
+            0%, 20% { transform: translateX(0); }
+            25%, 45% { transform: translateX(-100%); }
+            50%, 70% { transform: translateX(-200%); }
+            75%, 95% { transform: translateX(-300%); }
             100% { transform: translateX(0); }
         }
+
+        /* Button */
         .button-container {
             text-align: center;
             margin: 40px 0;
@@ -67,11 +71,16 @@
         .btn:hover {
             background: #a81d3b;
         }
+
+        /* Gallery */
         .gallery {
-            display: grid;
+            display: none; /* Başlangıçta gizli */
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             padding: 40px;
+        }
+        .gallery.active {
+            display: grid; /* Görünür hale getirmek için */
         }
         .gallery-item {
             position: relative;
@@ -83,21 +92,14 @@
             width: 100%;
             height: auto;
             display: block;
-            transition: transform 0.3s ease;
         }
-        .gallery-item:hover img {
-            transform: scale(1.1);
+
+        /* Görsellerin Kopyalanmasını Engelleme */
+        img {
+            pointer-events: none;
+            user-select: none;
         }
-        .story, .certificate {
-            margin: 40px;
-            padding: 20px;
-            background: #1a1a2e;
-            border: 1px solid #0f3460;
-            border-radius: 10px;
-        }
-        .story h2, .certificate h2 {
-            margin-top: 0;
-        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -105,17 +107,6 @@
         }
         footer p {
             margin: 0;
-        }
-        @media (max-width: 768px) {
-            .slider {
-                height: 200px;
-            }
-            .slides img {
-                height: 200px;
-            }
-            header h1 {
-                font-size: 1.8em;
-            }
         }
     </style>
 </head>
@@ -138,28 +129,24 @@
 
     <!-- Button Section -->
     <div class="button-container">
-        <a href="#rise-of-consectra" class="btn">Rise of CONSECTRA</a>
-        <a href="#future-series" class="btn">Future Series</a>
+        <button class="btn" onclick="showGallery()">Rise of CONSECTRA</button>
     </div>
-
-    <!-- Story Section -->
-    <section class="story">
-        <h2>Rise of CONSECTRA</h2>
-        <p>In the mystical lands where legends are born, the phoenix rises—a symbol of resilience, rebirth, and boundless energy. The Rise of CONSECTRA NFT series captures this essence, offering a timeless narrative of innovation and transformation.</p>
-    </section>
 
     <!-- Gallery Section -->
     <section id="rise-of-consectra" class="gallery">
-        <div class="gallery-item">
+            <div class="gallery-item">
             <img src="nft1.jpg" alt="NFT 1">
         </div>
-        <div class="gallery-item">
+            <div class="gallery-item">
             <img src="nft2.jpg" alt="NFT 2">
         </div>
-        <div class="gallery-item">
+            <div class="gallery-item">
             <img src="nft3.jpg" alt="NFT 3">
         </div>
-        <div class="gallery-item">
+            <div class="gallery-item">
+            <img src="nft4.jpg" alt="NFT 4">
+        </div>
+            <div class="gallery-item">
             <img src="nft4.jpg" alt="NFT 4">
         </div>
 	    <div class="gallery-item">
@@ -250,21 +237,20 @@
             <img src="nft33.jpg" alt="NFT 33">    
         </div>
     </section>
-
-    <section id="future-series" class="gallery">
-        <p style="text-align:center; color: #aaa;">No Future Series Available Yet</p>
-    </section>
-
-    <!-- Certificate Section -->
-    <section class="certificate">
-        <h2>Digital Certificate of Authenticity</h2>
-        <p>Each NFT in the CONSECTRA collection comes with a unique digital certificate, ensuring its authenticity and provenance. This guarantees the originality and secure ownership of every piece in the series.</p>
-    </section>
 </main>
 
 <footer>
     <p>&copy; 2024 CONSECTRA. All rights reserved.</p>
 </footer>
+
+<script>
+    function showGallery() {
+        document.getElementById('rise-of-consectra').classList.add('active');
+    }
+
+    // Sağ tıklamayı engelleme
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+</script>
 
 </body>
 </html>
