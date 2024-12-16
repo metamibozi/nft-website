@@ -26,6 +26,21 @@
             font-size: 2.5em;
         }
 
+        /* Açıklama Bölümü */
+        .description {
+            text-align: center;
+            padding: 20px;
+            background: #16213e;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        .description p {
+            margin: 0;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
         /* Slider */
         .slider {
             position: relative;
@@ -94,6 +109,27 @@
             display: block;
         }
 
+        /* NFT Açıklama Bölümü */
+        .nft-quotes {
+            margin: 40px auto;
+            padding: 20px;
+            background: #1a1a2e;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        .nft-quotes .quote {
+            margin-bottom: 20px;
+        }
+        .nft-quotes h3 {
+            font-size: 1.5em;
+            color: #e94560;
+        }
+        .nft-quotes p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
         /* Görsellerin Kopyalanmasını Engelleme */
         img {
             pointer-events: none;
@@ -108,6 +144,34 @@
         footer p {
             margin: 0;
         }
+
+        /* Sertifika Bölümü */
+        .certificate {
+            text-align: center;
+            margin: 40px auto;
+            padding: 20px;
+            background: #16213e;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        .certificate h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .certificate a {
+            display: inline-block;
+            padding: 15px 20px;
+            background: #e94560;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .certificate a:hover {
+            background: #a81d3b;
+        }
     </style>
 </head>
 <body>
@@ -117,6 +181,11 @@
 </header>
 
 <main>
+    <!-- Açıklama Bölümü -->
+    <section class="description">
+        <p>Welcome to the exclusive CONSECTRA NFT Collection. Each piece tells a unique story of resilience, rebirth, and transformation. Dive into the world of innovation and creativity that defines our series.</p>
+    </section>
+
     <!-- Slider Section -->
     <div class="slider">
         <div class="slides">
@@ -129,24 +198,21 @@
 
     <!-- Button Section -->
     <div class="button-container">
-        <button class="btn" onclick="showGallery()">Rise of CONSECTRA</button>
+        <button class="btn" onclick="toggleGallery()">Rise of CONSECTRA</button>
     </div>
 
     <!-- Gallery Section -->
     <section id="rise-of-consectra" class="gallery">
-            <div class="gallery-item">
+        <div class="gallery-item">
             <img src="nft1.jpg" alt="NFT 1">
         </div>
-            <div class="gallery-item">
+        <div class="gallery-item">
             <img src="nft2.jpg" alt="NFT 2">
         </div>
-            <div class="gallery-item">
+        <div class="gallery-item">
             <img src="nft3.jpg" alt="NFT 3">
         </div>
-            <div class="gallery-item">
-            <img src="nft4.jpg" alt="NFT 4">
-        </div>
-            <div class="gallery-item">
+        <div class="gallery-item">
             <img src="nft4.jpg" alt="NFT 4">
         </div>
 	    <div class="gallery-item">
@@ -237,6 +303,25 @@
             <img src="nft33.jpg" alt="NFT 33">    
         </div>
     </section>
+
+    <!-- NFT Açıklamaları Bölümü -->
+    <section class="nft-quotes">
+        <div class="quote">
+            <h3>NFT 1: The Rising Phoenix</h3>
+            <p>A tale of rebirth and resilience, the phoenix symbolizes the eternal cycle of life and transformation.</p>
+        </div>
+        <div class="quote">
+            <h3>NFT 2: The Eternal Flame</h3>
+            <p>Burning with passion and innovation, this piece captures the energy that drives our world forward.</p>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section class="certificate">
+        <h2>Digital Certificate of Authenticity</h2>
+        <p>Each NFT in the CONSECTRA collection comes with a unique digital certificate to ensure its authenticity and provenance. Download your certificate below:</p>
+        <a href="certificate.pdf" target="_blank">Download Certificate (PDF)</a>
+    </section>
 </main>
 
 <footer>
@@ -244,8 +329,8 @@
 </footer>
 
 <script>
-    function showGallery() {
-        document.getElementById('rise-of-consectra').classList.add('active');
+    function toggleGallery() {
+        const gallery = document.getElementById('rise-of-consectra');
     }
 
     // Sağ tıklamayı engelleme
