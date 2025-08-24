@@ -1,0 +1,34 @@
+[
+  {
+    "id": "phoenix_001",
+    "name": "CONSECTRA — Dawn Reforged",
+    "description": "Mythic Anka rising above a holographic Ankara skyline.",
+    "image": "assets/images/phoenix_001.webp",
+    "rarity": "Mythic",
+    "artist": "Özhan Demir",
+    "background": "Volumetric Sunrise",
+    "specialEffects": "Holographic gilded feathers, data-rain",
+    "openseaUrl": "",
+    "tokenUri": "",
+    "traits": [
+      {"trait_type": "Series", "value": "CONSECTRA"},
+      {"trait_type": "Mark", "value": "CST Emblem"}
+    ]
+  },
+  {
+    "id": "phoenix_002",
+    "name": "CONSECTRA — Ash to Light",
+    "description": "Iridescent ascent; alloy plumage catching first light.",
+    "image": "assets/images/phoenix_002.webp",
+    "rarity": "Ultra Rare",
+    "artist": "Özhan Demir",
+    "background": "Holographic Castle",
+    "specialEffects": "Fiber-optic tail, rim light",
+    "openseaUrl": "",
+    "tokenUri": "",
+    "traits": [
+      {"trait_type": "Series", "value": "CONSECTRA"},
+      {"trait_type": "Hidden", "value": "Bozkurt (UV)"}
+    ]
+  }
+]
