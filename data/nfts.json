@@ -1,34 +1,36 @@
 [
   {
-    "id": "phoenix_001",
-    "name": "CONSECTRA — Dawn Reforged",
-    "description": "Mythic Anka rising above a holographic Ankara skyline.",
-    "image": "assets/images/phoenix_001.webp",
-    "rarity": "Mythic",
-    "artist": "Özhan Demir",
-    "background": "Volumetric Sunrise",
-    "specialEffects": "Holographic gilded feathers, data-rain",
-    "openseaUrl": "",
-    "tokenUri": "",
-    "traits": [
-      {"trait_type": "Series", "value": "CONSECTRA"},
-      {"trait_type": "Mark", "value": "CST Emblem"}
+    "id": 1,
+    "tokenId": "CST-PHX 001",
+    "name": "Fireborn Phoenix",
+    "description": "A majestic phoenix rises from a fiery rebirth, symbolizing resilience and renewal...",
+    "image": "https://metamibozi.github.io/nft-website/images/phoenix_001_08_24_2025.webp",
+    "filename": "phoenix_001_08_24_2025.webp",
+    "rarity": "Legendary",
+    "background": "Dark, smoky gradient with fiery orange and red hues",
+    "effects": "Glowing embers, subtle smoke trails, and a radiant aura",
+    "attributes": [
+      {"trait_type": "Background", "value": "Dark, smoky gradient with fiery orange and red hues"},
+      {"trait_type": "Special Effects", "value": "Glowing embers, subtle smoke trails, and a radiant aura"},
+      {"trait_type": "Rarity Level", "value": "Legendary"},
+      {"trait_type": "Artist", "value": "CONSECTRA design team"}
     ]
   },
   {
-    "id": "phoenix_002",
-    "name": "CONSECTRA — Ash to Light",
-    "description": "Iridescent ascent; alloy plumage catching first light.",
-    "image": "assets/images/phoenix_002.webp",
-    "rarity": "Ultra Rare",
-    "artist": "Özhan Demir",
-    "background": "Holographic Castle",
-    "specialEffects": "Fiber-optic tail, rim light",
-    "openseaUrl": "",
-    "tokenUri": "",
-    "traits": [
-      {"trait_type": "Series", "value": "CONSECTRA"},
-      {"trait_type": "Hidden", "value": "Bozkurt (UV)"}
+    "id": 2,
+    "tokenId": "CST-PHX 002",
+    "name": "Radiant Phoenix",
+    "description": "A radiant phoenix emerges from swirling flames, embodying strength and rebirth...",
+    "image": "https://metamibozi.github.io/nft-website/images/phoenix_002_08_24_2025.webp",
+    "filename": "phoenix_002_08_24_2025.webp",
+    "rarity": "Rare",
+    "background": "Dark with golden light rays and smoky gradients",
+    "effects": "Radiant light beams, floating sparks, and flowing flame effects",
+    "attributes": [
+      {"trait_type": "Background", "value": "Dark with golden light rays and smoky gradients"},
+      {"trait_type": "Special Effects", "value": "Radiant light beams, floating sparks, and flowing flame effects"},
+      {"trait_type": "Rarity Level", "value": "Rare"},
+      {"trait_type": "Artist", "value": "CONSECTRA design team"}
     ]
   }
 ]
