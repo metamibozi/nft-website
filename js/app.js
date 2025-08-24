@@ -1,8 +1,8 @@
 // Config
 const CONFIG = {
-    metadataPath: 'data/nfts.json',
-    imagesBasePath: 'https://metamibozi.github.io/nft-website/images/',
-    fallbackImage: 'assets/images/placeholder.webp'
+    metadataPath: 'https://raw.githubusercontent.com/metamibozi/nft-website/main/data/nfts.json',
+    imagesBasePath: 'https://raw.githubusercontent.com/metamibozi/nft-website/main/images/',
+    fallbackImage: 'https://placehold.co/400x400/8B0000/FFFFFF/png?text=Phoenix+NFT'
 };
 
 // State
