@@ -1,92 +1,303 @@
-const $ = (s) => document.querySelector(s);
-const grid = $('#grid');
-const overlay = $('#overlay');
-const modalBody = $('#modal-body');
-const closeBtn = $('#close');
+// Config
+const CONFIG = {
+    metadataPath: 'data/nfts.json',
+    imagesBasePath: 'https://metamibozi.github.io/nft-website/images/',
+    fallbackImage: 'assets/images/placeholder.webp'
+};
 
-let nfts = [];
+// State
+let allNFTs = [];
+let filteredNFTs = [];
 
-async function load() {
-  try {
-    const res = await fetch('data/nfts.json', {cache:'no-store'});
-    nfts = await res.json();
-    render();
-  } catch (e) {
-    grid.innerHTML = `<p style="color:#f77">Could not load data/nfts.json</p>`;
-  }
+// DOM Elements
+const nftContainer = document.getElementById('nft-container');
+const filtersContainer = document.getElementById('filters');
+const modal = document.getElementById('nft-modal');
+const modalContent = document.getElementById('modal-content');
+const searchInput = document.getElementById('search-input');
+
+// Initialize App
+document.addEventListener('DOMContentLoaded', function() {
+    initApp();
+});
+
+async function initApp() {
+    try {
+        await loadNFTs();
+        setupEventListeners();
+        setupFilters();
+    } catch (error) {
+        showError('Failed to initialize application: ' + error.message);
+    }
 }
 
-function render() {
-  const q = $('#q').value.trim().toLowerCase();
-  const rarity = $('#rarity').value;
-  const sort = $('#sort').value;
-
-  let list = [...nfts];
-
-  if (rarity) list = list.filter(x => (x.rarity||'').toLowerCase() === rarity.toLowerCase());
-  if (q) list = list.filter(x =>
-    (x.name||'').toLowerCase().includes(q) ||
-    (x.description||'').toLowerCase().includes(q) ||
-    (x.traits||[]).some(t => (t.value||'').toLowerCase().includes(q))
-  );
-
-  if (sort === 'name') list.sort((a,b)=> (a.name||'').localeCompare(b.name||''));
-  else list.sort((a,b)=> (b.id||'').localeCompare(a.id||'')); // newest by id
-
-  grid.innerHTML = list.map(cardHTML).join('');
-  attachEvents();
+// Load NFTs from JSON
+async function loadNFTs() {
+    showLoading();
+    
+    try {
+        const response = await fetch(CONFIG.metadataPath);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        allNFTs = await response.json();
+        filteredNFTs = [...allNFTs];
+        
+        renderNFTs();
+        updateFilterCounts();
+        
+    } catch (error) {
+        console.error('Error loading NFTs:', error);
+        showError('Failed to load NFT data. Please check the metadata file.');
+        
+        // Fallback: Load from local variable if JSON fails
+        if (window.fallbackNFTs && window.fallbackNFTs.length > 0) {
+            allNFTs = window.fallbackNFTs;
+            filteredNFTs = [...allNFTs];
+            renderNFTs();
+            showSuccess('Loaded fallback NFT data');
+        }
+    }
 }
 
-function cardHTML(x){
-  const badge = x.rarity ? `<span class="badge">${x.rarity}</span>` : '';
-  const img = `<img class="thumb" src="${x.image}" alt="${x.name||'NFT'}" loading="lazy">`;
-  return `
-    <article class="card" data-id="${x.id}">
-      <div style="position:relative">${badge}${img}</div>
-      <div class="pad">
-        <div class="title">${x.name||'Untitled'}</div>
-        <div class="desc">${x.description||''}</div>
-        <div class="row">
-          ${x.openseaUrl ? `<a class="btn primary" target="_blank" href="${x.openseaUrl}">OpenSea</a>` : ''}
-          ${x.tokenUri ? `<a class="btn" target="_blank" href="${x.tokenUri}">Token URI</a>` : ''}
-          <button class="btn view">View</button>
-        </div>
-      </div>
-    </article>
-  `;
-}
+// Render NFTs
+function renderNFTs() {
+    if (filteredNFTs.length === 0) {
+        nftContainer.innerHTML = `
+            <div class="error">
+                <i class="fas fa-search"></i>
+                <p>No NFTs found matching your criteria</p>
+            </div>
+        `;
+        return;
+    }
 
-function attachEvents(){
-  document.querySelectorAll('.view').forEach(btn=>{
-    btn.addEventListener('click',(e)=>{
-      const card = e.target.closest('.card');
-      const id = card.dataset.id;
-      const x = nfts.find(n=>n.id===id);
-      showModal(x);
+    const html = filteredNFTs.map(nft => createNFTCard(nft)).join('');
+    nftContainer.innerHTML = html;
+    
+    // Add animations
+    const cards = nftContainer.querySelectorAll('.nft-card');
+    cards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1}s`;
+        card.classList.add('fade-in');
     });
-  });
 }
 
-function showModal(x){
-  const traits = (x.traits||[]).map(t=>`<span class="trait"><b>${t.trait_type}:</b> ${t.value}</span>`).join('');
-  modalBody.innerHTML = `
-    <div class="modal-grid">
-      <div><img src="${x.image}" alt="${x.name||'NFT'}"></div>
-      <div>
-        <h2 class="title" style="font-size:22px">${x.name||'Untitled'}</h2>
-        <p class="desc" style="min-height:auto">${x.description||''}</p>
-        <div class="traits">${traits}</div>
-        <div class="row">
-          ${x.openseaUrl ? `<a class="btn primary" target="_blank" href="${x.openseaUrl}">OpenSea</a>` : ''}
-          ${x.tokenUri ? `<a class="btn" target="_blank" href="${x.tokenUri}">Token URI</a>` : ''}
+// Create NFT Card HTML
+function createNFTCard(nft) {
+    const rarityClass = `rarity-${nft.rarity?.toLowerCase() || 'common'}`;
+    const imageUrl = nft.image || `${CONFIG.imagesBasePath}${nft.filename || `phoenix_${String(nft.id || nft.tokenId).padStart(3, '0')}_08_24_2025.webp`}`;
+    
+    return `
+        <div class="nft-card" data-rarity="${nft.rarity?.toLowerCase() || 'common'}" data-id="${nft.id || nft.tokenId}">
+            <img src="${imageUrl}" alt="${nft.name}" class="nft-image" 
+                 onerror="this.onerror=null; this.src='${CONFIG.fallbackImage}';">
+            <div class="nft-info">
+                <h3>${nft.name || 'Unnamed NFT'}</h3>
+                <p>${nft.description || 'No description available'}</p>
+                <div class="nft-meta">
+                    <span class="rarity ${rarityClass}">${nft.rarity || 'Common'}</span>
+                    <span>${nft.tokenId || `#${String(nft.id).padStart(3, '0')}`}</span>
+                </div>
+                <button class="btn btn-outline view-details" data-id="${nft.id || nft.tokenId}">
+                    View Details
+                </button>
+            </div>
         </div>
-      </div>
-    </div>`;
-  overlay.classList.remove('hidden');
+    `;
 }
-closeBtn.addEventListener('click', ()=> overlay.classList.add('hidden'));
-overlay.addEventListener('click', (e)=> { if(e.target===overlay) overlay.classList.add('hidden'); });
 
-['#q','#rarity','#sort'].forEach(s=> $(s).addEventListener('input', render));
+// Setup Filters
+function setupFilters() {
+    const rarities = ['all', 'legendary', 'epic', 'rare', 'uncommon', 'common'];
+    
+    const filtersHTML = rarities.map(rarity => `
+        <button class="filter-btn" data-filter="${rarity}">
+            ${rarity.charAt(0).toUpperCase() + rarity.slice(1)}
+            <span class="filter-count" data-rarity="${rarity}">0</span>
+        </button>
+    `).join('');
+    
+    filtersContainer.innerHTML = filtersHTML;
+    
+    // Add filter event listeners
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const filter = e.currentTarget.dataset.filter;
+            filterNFTs(filter);
+            
+            // Update active state
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            e.currentTarget.classList.add('active');
+        });
+    });
+}
 
-load();
+// Filter NFTs
+function filterNFTs(filter) {
+    if (filter === 'all') {
+        filteredNFTs = [...allNFTs];
+    } else {
+        filteredNFTs = allNFTs.filter(nft => 
+            nft.rarity?.toLowerCase() === filter
+        );
+    }
+    
+    renderNFTs();
+}
+
+// Update filter counts
+function updateFilterCounts() {
+    const counts = {
+        all: allNFTs.length,
+        legendary: allNFTs.filter(nft => nft.rarity?.toLowerCase() === 'legendary').length,
+        epic: allNFTs.filter(nft => nft.rarity?.toLowerCase() === 'epic').length,
+        rare: allNFTs.filter(nft => nft.rarity?.toLowerCase() === 'rare').length,
+        uncommon: allNFTs.filter(nft => nft.rarity?.toLowerCase() === 'uncommon').length,
+        common: allNFTs.filter(nft => nft.rarity?.toLowerCase() === 'common').length
+    };
+    
+    Object.entries(counts).forEach(([rarity, count]) => {
+        const element = document.querySelector(`.filter-count[data-rarity="${rarity}"]`);
+        if (element) {
+            element.textContent = ` (${count})`;
+        }
+    });
+}
+
+// Setup Event Listeners
+function setupEventListeners() {
+    // View details
+    document.body.addEventListener('click', (e) => {
+        if (e.target.classList.contains('view-details')) {
+            const nftId = e.target.dataset.id;
+            showNFTDetails(nftId);
+        }
+    });
+    
+    // Close modal
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('close-modal') || e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Search functionality
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            searchNFTs(e.target.value);
+        });
+    }
+    
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+}
+
+// Show NFT Details Modal
+function showNFTDetails(nftId) {
+    const nft = allNFTs.find(n => n.id == nftId || n.tokenId == nftId);
+    if (!nft) return;
+    
+    const rarityClass = `rarity-${nft.rarity?.toLowerCase() || 'common'}`;
+    
+    modalContent.innerHTML = `
+        <button class="close-modal">&times;</button>
+        <h2>${nft.name}</h2>
+        <div class="modal-image">
+            <img src="${nft.image || CONFIG.fallbackImage}" alt="${nft.name}" 
+                 onerror="this.src='${CONFIG.fallbackImage}'">
+        </div>
+        <div class="modal-info">
+            <p><strong>Token ID:</strong> ${nft.tokenId || nft.id}</p>
+            <p><strong>Rarity:</strong> <span class="${rarityClass}">${nft.rarity}</span></p>
+            <p><strong>Description:</strong> ${nft.description}</p>
+            ${nft.attributes ? `
+            <div class="attributes">
+                <h3>Attributes</h3>
+                <div class="attributes-grid">
+                    ${nft.attributes.map(attr => `
+                        <div class="attribute">
+                            <span class="attribute-name">${attr.trait_type}:</span>
+                            <span class="attribute-value">${attr.value}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+            ` : ''}
+        </div>
+    `;
+    
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+// Close Modal
+function closeModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Search NFTs
+function searchNFTs(query) {
+    if (!query.trim()) {
+        filteredNFTs = [...allNFTs];
+    } else {
+        const searchTerm = query.toLowerCase();
+        filteredNFTs = allNFTs.filter(nft =>
+            nft.name?.toLowerCase().includes(searchTerm) ||
+            nft.description?.toLowerCase().includes(searchTerm) ||
+            nft.tokenId?.toLowerCase().includes(searchTerm) ||
+            nft.rarity?.toLowerCase().includes(searchTerm)
+        );
+    }
+    
+    renderNFTs();
+}
+
+// Utility Functions
+function showLoading() {
+    nftContainer.innerHTML = `
+        <div class="loading">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Loading NFTs...</p>
+        </div>
+    `;
+}
+
+function showError(message) {
+    nftContainer.innerHTML = `
+        <div class="error">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p>${message}</p>
+        </div>
+    `;
+}
+
+function showSuccess(message) {
+    const notification = document.createElement('div');
+    notification.className = 'success';
+    notification.innerHTML = `<p>${message}</p>`;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+}
+
+// Export for global access
+window.NFTApp = {
+    loadNFTs,
+    filterNFTs,
+    searchNFTs,
+    showNFTDetails,
+    closeModal
+};
