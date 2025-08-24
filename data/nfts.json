@@ -1,36 +1,3512 @@
 [
-  {
-    "id": 1,
-    "tokenId": "CST-PHX 001",
-    "name": "Fireborn Phoenix",
-    "description": "A majestic phoenix rises from a fiery rebirth, symbolizing resilience and renewal...",
-    "image": "https://metamibozi.github.io/nft-website/images/phoenix_001_08_24_2025.webp",
-    "filename": "phoenix_001_08_24_2025.webp",
-    "rarity": "Legendary",
-    "background": "Dark, smoky gradient with fiery orange and red hues",
-    "effects": "Glowing embers, subtle smoke trails, and a radiant aura",
-    "attributes": [
-      {"trait_type": "Background", "value": "Dark, smoky gradient with fiery orange and red hues"},
-      {"trait_type": "Special Effects", "value": "Glowing embers, subtle smoke trails, and a radiant aura"},
-      {"trait_type": "Rarity Level", "value": "Legendary"},
-      {"trait_type": "Artist", "value": "CONSECTRA design team"}
-    ]
-  },
-  {
-    "id": 2,
-    "tokenId": "CST-PHX 002",
-    "name": "Radiant Phoenix",
-    "description": "A radiant phoenix emerges from swirling flames, embodying strength and rebirth...",
-    "image": "https://metamibozi.github.io/nft-website/images/phoenix_002_08_24_2025.webp",
-    "filename": "phoenix_002_08_24_2025.webp",
-    "rarity": "Rare",
-    "background": "Dark with golden light rays and smoky gradients",
-    "effects": "Radiant light beams, floating sparks, and flowing flame effects",
-    "attributes": [
-      {"trait_type": "Background", "value": "Dark with golden light rays and smoky gradients"},
-      {"trait_type": "Special Effects", "value": "Radiant light beams, floating sparks, and flowing flame effects"},
-      {"trait_type": "Rarity Level", "value": "Rare"},
-      {"trait_type": "Artist", "value": "CONSECTRA design team"}
-    ]
-  }
+    {
+        "name": "Fireborn Phoenix (CST-PHX 001)",
+        "description": "A majestic phoenix rises from a fiery rebirth, symbolizing resilience and renewal, crafted with intricate fiery feathers and a powerful presence.\n\nBackstory: Reborn in volcanic fire, this phoenix marks the rebirth of power and purpose.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_001.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Legendary"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark, smoky gradient with fiery orange and red hues, suggesting a volcanic or celestial setting."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing embers, subtle smoke trails, and a radiant aura around the phoenix."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 5
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 85
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 001",
+            "collection_position": "1 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_001.png"
+        }
+    },
+    {
+        "name": "Radiant Phoenix (CST-PHX 002)",
+        "description": "A radiant phoenix emerges from swirling flames, embodying strength and rebirth with vibrant, multicolored feathers and a majestic stance.\n\nBackstory: Forged by ancient winds, this phoenix guards the skies as dusk meets dawn.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_002.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark with golden light rays and smoky gradients, evoking a celestial rebirth scene."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Radiant light beams, floating sparks, and flowing flame effects."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 002",
+            "collection_position": "2 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_002.png"
+        }
+    },
+    {
+        "name": "Spectral Phoenix (CST-PHX 003)",
+        "description": "A mesmerizing phoenix with a digital glitch effect, rising from vibrant flames, symbolizing technological rebirth and cosmic energy.\n\nBackstory: Once protector of a lost civilization, now reborn from ashes to begin again.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_003.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Epic"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark with vertical light streaks and a futuristic glitch background."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Digital glitch distortion, shimmering flame trails, and holographic effects."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 10
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 70
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 003",
+            "collection_position": "3 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_003.png"
+        }
+    },
+    {
+        "name": "Celestial Phoenix (CST-PHX 004)",
+        "description": "A cosmic phoenix soars over ancient ruins, its multicolored flames blending with a starry sky, symbolizing eternal renewal and mystical power.\n\nBackstory: Carrier of solar energy and guardian of the high skies in CONSECTRA realms.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_004.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark starry sky with ancient ruins and glowing embers, transitioning to a celestial horizon."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Sparkling star dust, ethereal glow, and subtle flame bursts."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 004",
+            "collection_position": "4 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_004.png"
+        }
+    },
+    {
+        "name": "Mystic Phoenix (CST-PHX 005)",
+        "description": "A powerful phoenix emerges from a magical fiery circle within an ancient temple, symbolizing mystical strength and rebirth amidst ruins.\n\nBackstory: The last flame of the day, it bridges dusk and night with poise.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_005.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Uncommon"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark temple interior with golden light rays and ancient stone ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing circular flame ring, subtle spark effects, and a mystical aura."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 30
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 35
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 005",
+            "collection_position": "5 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_005.png"
+        }
+    },
+    {
+        "name": "Sunset Phoenix (CST-PHX 006)",
+        "description": "A majestic phoenix stands triumphantly at sunset, surrounded by flaming torches and ancient columns, symbolizing victory and eternal flame.\n\nBackstory: This phoenix was born at the heart of a desert eclipse, carrying the warmth of a thousand dawns.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_006.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Warm sunset sky with rocky terrain and ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Flickering torch flames, subtle smoke, and a golden sunset glow."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 006",
+            "collection_position": "6 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_006.png"
+        }
+    },
+    {
+        "name": "Ethereal Phoenix (CST-PHX 007)",
+        "description": "A mystical phoenix rises above a serene waterfall and ancient ruins, its multicolored flames enhanced by a magical rune circle, symbolizing divine rebirth.\n\nBackstory: Once thought extinct, it reemerges from deep space with purpose unknown.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_007.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark starry sky with waterfalls and ancient ruins, glowing with ethereal light."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing rune effects, shimmering water reflections, and subtle flame bursts."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 007",
+            "collection_position": "7 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_007.png"
+        }
+    },
+    {
+        "name": "Rune Phoenix (CST-PHX 008)",
+        "description": "A majestic phoenix emerges from a fiery rune circle at dusk, symbolizing ancient power and rebirth amidst a mystical landscape.\n\nBackstory: Forged in crystalline storms, its flight signals a seismic shift in the balance of realms.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_008.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Uncommon"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark dusk sky with smoky terrain and distant hills."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing rune symbols, swirling flames, and subtle smoke effects."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 30
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 35
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 008",
+            "collection_position": "8 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_008.png"
+        }
+    },
+    {
+        "name": "Dawn Phoenix (CST-PHX 009)",
+        "description": "A graceful phoenix soars over a lush valley at dawn, its fiery wings reflecting the sunrise, symbolizing new beginnings and eternal vitality.\n\nBackstory: Summoned by ancient polar rites, it guards the edges of forgotten ice temples.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_009.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Warm sunrise sky with green hills and distant ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Soft sunrise glow, subtle mist, and gentle flame accents."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 009",
+            "collection_position": "9 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_009.png"
+        }
+    },
+    {
+        "name": "Twilight Phoenix (CST-PHX 010)",
+        "description": "A majestic phoenix rises between ancient ruins at twilight, its fiery wings glowing against a vibrant sunset, symbolizing resilience and rebirth.\n\nBackstory: Its presence marks an ancient prophecy: when flame meets shadow, balance returns.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_010.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Warm twilight sky with green hills and ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Subtle sunset glow, flickering embers, and a radiant aura."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 010",
+            "collection_position": "10 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_010.png"
+        }
+    },
+    {
+        "name": "Storm Phoenix (CST-PHX 011)",
+        "description": "A powerful phoenix emerges from a stormy sky over ancient ruins, its fiery wings clashing with lightning, symbolizing strength and resilience.\n\nBackstory: Born from the core of collapsing stars, it heralds transformation through fire.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_011.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark stormy sky with flashes of lightning and ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Electric lightning effects, swirling storm winds, and glowing embers."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 011",
+            "collection_position": "11 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_011.png"
+        }
+    },
+    {
+        "name": "Inferno Phoenix (CST-PHX 012)",
+        "description": "A fierce phoenix rises from a blazing inferno within ancient ruins, its fiery wings radiating intense heat, symbolizing unstoppable power.\n\nBackstory: Every beat of its wings echoes across galaxies, mapping a divine path.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_012.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Epic"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark with roaring flames and crumbling ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Intense flame waves, glowing heat distortion, and scattered embers."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 10
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 70
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 012",
+            "collection_position": "12 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_012.png"
+        }
+    },
+    {
+        "name": "Lunar Phoenix (CST-PHX 013)",
+        "description": "A mystical phoenix soars under a full moon over ancient ruins, its silvery-blue flames symbolizing lunar power and eternal rebirth.\n\nBackstory: Born from the legacy of Anatolian legends and future technology.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_013.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark night sky with a full moon and ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Subtle moonlight glow, shimmering flame trails, and faint mist."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 013",
+            "collection_position": "13 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_013.png"
+        }
+    },
+    {
+        "name": "Solar Phoenix (CST-PHX 014)",
+        "description": "A radiant phoenix emerges from a blazing sun over desert ruins, its golden flames symbolizing solar strength and rebirth.\n\nBackstory: It emerges only during electric storms, guiding ancient sky rituals.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_014.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Bright desert landscape with a blazing sun and ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Radiant sun flares, glowing heat waves, and subtle flame bursts."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 014",
+            "collection_position": "14 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_014.png"
+        }
+    },
+    {
+        "name": "Crystal Phoenix (CST-PHX 015)",
+        "description": "A stunning phoenix rises from a crystalline cave within ancient ruins, its icy-blue flames symbolizing purity and timeless rebirth.\n\nBackstory: Said to bring peace to warriors and clarity to dreamers.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_015.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Legendary"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark cave interior with glowing crystals and ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Shimmering crystal reflections, subtle ice mist, and faint flame glow."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 5
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 85
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 015",
+            "collection_position": "15 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_015.png"
+        }
+    },
+    {
+        "name": "Ember Phoenix (CST-PHX 016)",
+        "description": "A vibrant phoenix emerges from a pile of glowing embers within ancient ruins, its fiery wings symbolizing warmth and resilience.\n\nBackstory: Two souls bound in fire, one spirit split by prophecy.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_016.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark with scattered glowing embers and ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Flickering ember effects, subtle smoke, and a warm radiant glow."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 016",
+            "collection_position": "16 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_016.png"
+        }
+    },
+    {
+        "name": "Frost Phoenix (CST-PHX 017)",
+        "description": "A majestic phoenix rises from icy ruins under a snowy sky, its frosty blue flames symbolizing cold resilience and rebirth.\n\nBackstory: Its feathers shift with history, changing hues as ages pass.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_017.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Uncommon"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark snowy sky with icy ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Shimmering frost effects, falling snow, and a cool radiant aura."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 30
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 35
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 017",
+            "collection_position": "17 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_017.png"
+        }
+    },
+    {
+        "name": "Forest Phoenix (CST-PHX 018)",
+        "description": "A vibrant phoenix soars over a lush forest with ancient ruins, its green-tinged flames symbolizing nature's renewal.\n\nBackstory: Crafted in secret, it guards the last ember of creation.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_018.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Lush green forest with ancient ruins and soft sunlight."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing leaf effects, subtle mist, and gentle flame accents."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 018",
+            "collection_position": "18 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_018.png"
+        }
+    },
+    {
+        "name": "Ocean Phoenix (CST-PHX 019)",
+        "description": "A graceful phoenix rises from ocean waves over sunken ruins, its aqua flames symbolizing aquatic rebirth.\n\nBackstory: It appears only during rare eclipses, vanishing before dawn.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_019.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark ocean waves with sunken ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Shimmering water reflections, subtle wave motion, and faint flame glow."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 019",
+            "collection_position": "19 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_019.png"
+        }
+    },
+    {
+        "name": "Aurora Phoenix (CST-PHX 020)",
+        "description": "A mystical phoenix soars under the aurora borealis over ruins, its multicolored flames symbolizing cosmic beauty.\n\nBackstory: Legend says it guards the sun’s final spark from eternal darkness.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_020.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Uncommon"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark sky with aurora borealis and ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing aurora waves, shimmering flame trails, and faint mist."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 30
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 35
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 020",
+            "collection_position": "20 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_020.png"
+        }
+    },
+    {
+        "name": "Desert Phoenix (CST-PHX 021)",
+        "description": "A resilient phoenix rises from desert sands over ancient ruins, its sandy-gold flames symbolizing endurance.\n\nBackstory: Said to appear only once every thousand years during the solar blackout.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_021.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Warm desert landscape with ancient ruins and soft sunlight."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing sand effects, subtle heat waves, and gentle flame bursts."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 021",
+            "collection_position": "21 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_021.png"
+        }
+    },
+    {
+        "name": "Mountain Phoenix (CST-PHX 022)",
+        "description": "A powerful phoenix emerges from a mountain peak over ruins, its rugged flames symbolizing strength.\n\nBackstory: These symbols unlock knowledge lost to time, visible only in flame.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_022.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark mountainous terrain with ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing rock effects, subtle mist, and a radiant aura."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 022",
+            "collection_position": "22 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_022.png"
+        }
+    },
+    {
+        "name": "Starlit Phoenix (CST-PHX 023)",
+        "description": "A celestial phoenix soars under a starry sky over ruins, its sparkling flames symbolizing cosmic renewal.\n\nBackstory: The apex of AI-engineered lifeforms designed for rebirth missions.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_023.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark starry sky with ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Shimmering star dust, subtle flame trails, and a celestial glow."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 023",
+            "collection_position": "23 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_023.png"
+        }
+    },
+    {
+        "name": "Volcanic Phoenix (CST-PHX 024)",
+        "description": "A fierce phoenix rises from a volcanic eruption over ruins, its molten flames symbolizing raw power.\n\nBackstory: Each feather glows with the memory of a fallen guardian.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_024.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Epic"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark volcanic landscape with ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing lava effects, smoke trails, and intense heat distortion."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 10
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 70
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 024",
+            "collection_position": "24 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_024.png"
+        }
+    },
+    {
+        "name": "River Phoenix (CST-PHX 025)",
+        "description": "A serene phoenix rises from a flowing river over ruins, its water-tinged flames symbolizing life.\n\nBackstory: It burns rot to purify life, feared and revered by all.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_025.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Calm river landscape with ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Shimmering water reflections, subtle wave motion, and faint flame glow."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 025",
+            "collection_position": "25 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_025.png"
+        }
+    },
+    {
+        "name": "Eclipse Phoenix (CST-PHX 026)",
+        "description": "A mysterious phoenix emerges during a solar eclipse over ruins, its dark flames symbolizing enigma.\n\nBackstory: Forged in the final fires of a forgotten war, it brings strength through rebirth.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_026.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark sky with a solar eclipse and ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing eclipse halo, subtle flame trails, and a shadowy aura."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 026",
+            "collection_position": "26 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_026.png"
+        }
+    },
+    {
+        "name": "Meadow Phoenix (CST-PHX 027)",
+        "description": "A gentle phoenix soars over a meadow with ruins, its soft green flames symbolizing peace.\n\nBackstory: Its flight predicts the tides of fate for nations yet to rise.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_027.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Legendary"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Bright meadow landscape with ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flower effects, subtle mist, and gentle flame accents."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 5
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 85
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 027",
+            "collection_position": "27 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_027.png"
+        }
+    },
+    {
+        "name": "Thunder Phoenix (CST-PHX 028)",
+        "description": "A powerful phoenix emerges from a thunderstorm over ruins, its electric flames symbolizing energy.\n\nBackstory: It guards the gateways of reality from digital corruption.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_028.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark stormy sky with ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Electric lightning effects, swirling storm winds, and glowing embers."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 028",
+            "collection_position": "28 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_028.png"
+        }
+    },
+    {
+        "name": "Glacier Phoenix (CST-PHX 029)",
+        "description": "A majestic phoenix rises from a glacier over ruins, its icy flames symbolizing cold endurance.\n\nBackstory: Wielded in myth as a weapon of divine wrath.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_029.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Uncommon"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark icy landscape with ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Shimmering ice reflections, subtle frost mist, and faint flame glow."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 30
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 35
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 029",
+            "collection_position": "29 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_029.png"
+        }
+    },
+    {
+        "name": "Golden Phoenix (CST-PHX 030)",
+        "description": "A regal phoenix rises from a golden temple ruin, its radiant flames symbolizing wealth and rebirth.\n\nBackstory: It restores balance in overburnt worlds with seeds of rebirth.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_030.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Warm golden temple interior with ancient ruins."
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Radiant gold glow, subtle spark effects, and a majestic aura."
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 030",
+            "collection_position": "30 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_030.png"
+        }
+    },
+    {
+        "name": "Phoenix of Eternal Ruins (CST-PHX 031)",
+        "description": "A majestic phoenix rises from ancient ruins, its fiery wings ablaze with vibrant orange and red flames, symbolizing rebirth and eternal strength.\n\nBackstory: It rises only to judge when balance is lost in flame and ash.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_031.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient ruins with towering columns, misty valley, golden sunset"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing embers, subtle aura around the phoenix"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 031",
+            "collection_position": "31 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_031.png"
+        }
+    },
+    {
+        "name": "Phoenix of Celestial Renewal (CST-PHX 032)",
+        "description": "A majestic phoenix soars above ancient ruins, its fiery wings glowing with vibrant orange and red flames, symbolizing renewal and celestial power.\n\nBackstory: Seen only by monarchs in their final dreams of legacy.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_032.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Uncommon"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient ruins with a grand temple, misty mountains, golden sunrise"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing embers, subtle fiery aura"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 30
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 35
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 032",
+            "collection_position": "32 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_032.png"
+        }
+    },
+    {
+        "name": "Phoenix of Desert Resilience (CST-PHX 033)",
+        "description": "A majestic phoenix hovers over an ancient desert city, its fiery wings radiating vibrant orange flames, symbolizing resilience and eternal rise.\n\nBackstory: It exists between life and memory, reborn only in silence.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_033.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient desert city with stone structures, rugged mountains, golden horizon"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flames, subtle heat haze"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 033",
+            "collection_position": "33 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_033.png"
+        }
+    },
+    {
+        "name": "Phoenix of Transformation (CST-PHX 034)",
+        "description": "A radiant phoenix ascends with vibrant yellow-orange flames, symbolizing transformation and eternal energy.\n\nBackstory: A spirit once lost to the storm, now reborn to strike injustice.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_034.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dark mystical backdrop with cosmic accents"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame trails, subtle sparkling aura"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 034",
+            "collection_position": "34 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_034.png"
+        }
+    },
+    {
+        "name": "Phoenix of Divine Rebirth (CST-PHX 035)",
+        "description": "A mystical phoenix emerges within an ancient temple, its multicolored wings shimmering with blue, purple, and orange flames, symbolizing divine rebirth.\n\nBackstory: The last heir of celestial fire, it awakens only during solar flares.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_035.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient temple with towering columns, golden light rays"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle sparkling particles"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 035",
+            "collection_position": "35 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_035.png"
+        }
+    },
+    {
+        "name": "Phoenix of Cosmic Power (CST-PHX 036)",
+        "description": "A majestic phoenix rises amidst ancient ruins, its fiery wings glowing with vibrant red and purple hues, surrounded by a mystical energy circle, symbolizing eternal rebirth and cosmic power.\n\nBackstory: Legends say its feathers burn only for truth and vengeance.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_036.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Epic"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient ruins with towering columns, misty atmosphere, faint celestial glow"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing energy aura, subtle sparkling particles, mystical energy swirls"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 10
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 70
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 036",
+            "collection_position": "36 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_036.png"
+        }
+    },
+    {
+        "name": "Phoenix of Celestial Strength (CST-PHX 037)",
+        "description": "A celestial phoenix soars above a mystical landscape, its wings adorned with vibrant white, orange, and purple flames, symbolizing cosmic rebirth and divine strength.\n\nBackstory: It is said to appear where time has frozen for centuries.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_037.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Mystical landscape with fairy-tale towers, starry sky, rugged mountains"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame trails, subtle cosmic sparkles, ethereal aura"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 037",
+            "collection_position": "37 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_037.png"
+        }
+    },
+    {
+        "name": "Phoenix of Coastal Harmony (CST-PHX 038)",
+        "description": "A majestic phoenix rises from the sea, its wings adorned with vibrant gold and teal feathers, symbolizing resilience and harmony with nature, set against a coastal cityscape with a bridge.\n\nBackstory: Its cry summons solar winds and rebirths the cosmos.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_038.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Coastal cityscape with a prominent bridge, calm sea, distant hills"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing feather accents, subtle water splashes, ethereal aura"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 038",
+            "collection_position": "38 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_038.png"
+        }
+    },
+    {
+        "name": "Phoenix of Ancient Power (CST-PHX 039)",
+        "description": "A vibrant phoenix emerges from an ancient pyramid, its wings ablaze with multicolored flames in blue, purple, and red, symbolizing mystical rebirth and ancient power, paired with a branded container.\n\nBackstory: Born from tectonic fury, its call heralds eruptions.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_039.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Legendary"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient pyramid with stone statues, misty desert atmosphere, starry night sky"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle smoke trails, ethereal light effects"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 5
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 85
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 039",
+            "collection_position": "39 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_039.png"
+        }
+    },
+    {
+        "name": "Phoenix of Pure Renewal (CST-PHX 040)",
+        "description": "A graceful phoenix hovers over terraced turquoise pools, its wings shimmering with white and orange hues, symbolizing purity and natural renewal.\n\nBackstory: Every flap of its wings carries the voices of the ancients.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_040.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Terraced turquoise pools, distant mountains, clear sky with cypress trees"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing feather accents, subtle water reflections, ethereal halo"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 040",
+            "collection_position": "40 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_040.png"
+        }
+    },
+    {
+        "name": "Phoenix of Cosmic Wisdom (CST-PHX 041)",
+        "description": "A majestic phoenix stands atop ancient stone statues, its wings aglow with vibrant orange and blue flames, symbolizing cosmic rebirth and ancient wisdom under a starry sky.\n\nBackstory: It guards the veil between dusk and dawn, lighting the path for dreamers.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_041.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Uncommon"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient ruins with stone statues, rugged mountains, starry night with a celestial body"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle cosmic sparkles, ethereal light rings"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 30
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 35
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 041",
+            "collection_position": "41 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_041.png"
+        }
+    },
+    {
+        "name": "Phoenix of Divine Serenity (CST-PHX 042)",
+        "description": "A luminous phoenix rises within an ancient domed hall, its wings shimmering with vibrant teal and gold flames, symbolizing divine renewal and serenity over reflective waters.\n\nBackstory: Its flight corrupts firewalls and reveals hidden truth.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_042.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient domed hall with towering columns, reflective water, soft dome lighting"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle water reflections, ethereal light rays"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 042",
+            "collection_position": "42 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_042.png"
+        }
+    },
+    {
+        "name": "Phoenix of Cultural Beauty (CST-PHX 043)",
+        "description": "A radiant phoenix soars above an ancient amphitheater, its wings glowing with vibrant teal and gold flames, symbolizing cultural rebirth and timeless beauty at sunset.\n\nBackstory: Its feathers reflect not just light, but memory.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_043.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient amphitheater with towering columns, golden sunset, distant hills with cypress trees"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle light reflections, ethereal shimmer"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 043",
+            "collection_position": "43 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_043.png"
+        }
+    },
+    {
+        "name": "Phoenix of Celestial Mystique (CST-PHX 044)",
+        "description": "A majestic phoenix soars under a crescent moon, its wings ablaze with vibrant orange and blue flames, symbolizing celestial rebirth and eternal mystique over an ancient mountain city.\n\nBackstory: Its rebirth is unknown to time, guided only by gravity.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_044.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient mountain city with domed structures, starry night sky, crescent moon, rugged terrain"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle cosmic sparkles, ethereal moonlight glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 044",
+            "collection_position": "44 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_044.png"
+        }
+    },
+    {
+        "name": "Phoenix of Mystical Power (CST-PHX 045)",
+        "description": "A majestic phoenix soars under a crescent moon, its wings ablaze with vibrant orange, blue, and purple flames, symbolizing celestial rebirth and mystical power over an ancient mountain city.\n\nBackstory: Each wingbeat marks a prophecy closer to fulfillment.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_045.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Epic"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient mountain city with domed structures, starry night sky, crescent moon, rugged terrain"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle cosmic sparkles, ethereal moonlight glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 10
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 70
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 045",
+            "collection_position": "45 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_045.png"
+        }
+    },
+    {
+        "name": "Phoenix of Fiery Strength (CST-PHX 046)",
+        "description": "A radiant phoenix ascends from a volcanic crater, its wings shimmering with vibrant red and gold flames, symbolizing fiery rebirth and primal strength under a smoky sky.\n\nBackstory: Its presence marks the boundary between mortality and the immortal blaze.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_046.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Volcanic crater with molten lava, smoky atmosphere, distant jagged peaks"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle smoke swirls, ethereal heat haze"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 046",
+            "collection_position": "46 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_046.png"
+        }
+    },
+    {
+        "name": "Phoenix of Nature's Vitality (CST-PHX 047)",
+        "description": "A majestic phoenix hovers over an ancient forest, its wings glowing with vibrant green and orange flames, symbolizing nature's rebirth and eternal vitality under a misty dawn.\n\nBackstory: Its shattered wings refract forgotten colors of the universe.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_047.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient forest with towering trees, misty dawn light, distant mountains"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle mist swirls, ethereal light rays"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 047",
+            "collection_position": "47 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_047.png"
+        }
+    },
+    {
+        "name": "Phoenix of Enduring Legacy (CST-PHX 048)",
+        "description": "A luminous phoenix rises from an ancient cliffside ruin, its wings ablaze with vibrant purple and gold flames, symbolizing mystical rebirth and enduring legacy under a twilight sky.\n\nBackstory: Its screech is a thunderclap that awakens dormant skies.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_048.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Legendary"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient cliffside ruin with crumbling walls, twilight sky with soft purple hues, distant valleys"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle twilight sparkles, ethereal light mist"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 5
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 85
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 048",
+            "collection_position": "48 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_048.png"
+        }
+    },
+    {
+        "name": "Phoenix of Coastal Courage (CST-PHX 049)",
+        "description": "A majestic phoenix soars above an ancient seaside fortress, its wings glowing with vibrant teal and red flames, symbolizing coastal rebirth and timeless courage under a sunrise sky.\n\nBackstory: Its pure white feathers carry the scent of final dawn.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_049.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient seaside fortress with stone walls, sunrise over the ocean, distant cliffs"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle water reflections, ethereal sunrise glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 049",
+            "collection_position": "49 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_049.png"
+        }
+    },
+    {
+        "name": "Phoenix of Cosmic Wisdom (CST-PHX 050)",
+        "description": "A radiant phoenix ascends from an ancient celestial observatory, its wings shimmering with vibrant silver and blue flames, symbolizing cosmic wisdom and eternal ascent under a starry night sky.\n\nBackstory: Its wings spread across constellations, binding stars with light.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_050.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient celestial observatory with domed roofs, starry night sky, distant mountains"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle star-like sparkles, ethereal cosmic glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 050",
+            "collection_position": "50 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_050.png"
+        }
+    },
+    {
+        "name": "Phoenix of Desert Renewal (CST-PHX 051)",
+        "description": "A majestic phoenix rises from an ancient desert oasis, its wings ablaze with vibrant yellow and orange flames, symbolizing life renewal and desert resilience under a midday sun.\n\nBackstory: Its presence turns night to day across the horizon.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_051.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Legendary"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient desert oasis with palm trees, clear blue sky, golden sand dunes"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle heat haze, ethereal sunlight reflections"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 5
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 85
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 051",
+            "collection_position": "51 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_051.png"
+        }
+    },
+    {
+        "name": "Phoenix of Flowing Vitality (CST-PHX 052)",
+        "description": "A majestic phoenix soars over an ancient river valley, its wings glowing with vibrant green and red flames, symbolizing nature's rebirth and flowing vitality under a golden sunrise.\n\nBackstory: Its black fire consumes only the guilty.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_052.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient river valley with winding waters, golden sunrise, distant forested hills"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle water reflections, ethereal sunrise glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 052",
+            "collection_position": "52 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_052.png"
+        }
+    },
+    {
+        "name": "Phoenix of Mystical Strength (CST-PHX 053)",
+        "description": "A majestic phoenix hovers over an ancient mountain pass, its wings glowing with vibrant purple and red flames, symbolizing strength and mystical ascent under a stormy sky.\n\nBackstory: Said to be born under twin moons.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_053.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Ultra Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient mountain pass with rugged peaks, stormy sky with lightning, misty valleys"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle lightning flashes, ethereal mist glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 3
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 100
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 053",
+            "collection_position": "53 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_053.png"
+        }
+    },
+    {
+        "name": "Phoenix of Hidden Mystery (CST-PHX 054)",
+        "description": "A radiant phoenix ascends from an ancient cave entrance, its wings shimmering with vibrant blue and silver flames, symbolizing hidden rebirth and celestial mystery under a twilight sky.\n\nBackstory: Its wings carry incantations older than the stars.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_054.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient cave entrance with glowing crystals, twilight sky with soft blue hues, rugged cliffs"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle crystal reflections, ethereal twilight glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 054",
+            "collection_position": "54 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_054.png"
+        }
+    },
+    {
+        "name": "Phoenix of Ethereal Harmony (CST-PHX 055)",
+        "description": "A radiant phoenix ascends from an ancient floating island, its wings shimmering with vibrant green and gold flames, symbolizing celestial renewal and ethereal harmony under a dawn sky.\n\nBackstory: It is both guardian and weapon, never resting.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_055.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient floating island with ruins, dawn sky with soft pink hues, distant clouds"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle cloud swirls, ethereal light rays"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 055",
+            "collection_position": "55 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_055.png"
+        }
+    },
+    {
+        "name": "Phoenix of Wild Mystique (CST-PHX 056)",
+        "description": "A majestic phoenix soars over an ancient jungle temple, its wings ablaze with vibrant orange and purple flames, symbolizing wild rebirth and ancient mystique under a midday sun.\n\nBackstory: Each feather holds the light of a thousand stars.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_056.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Ultra Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient jungle temple with overgrown ruins, lush greenery, midday sun with light rays"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle leaf reflections, ethereal sunlight glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 3
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 100
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 056",
+            "collection_position": "56 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_056.png"
+        }
+    },
+    {
+        "name": "Phoenix of Icy Purity (CST-PHX 057)",
+        "description": "A luminous phoenix rises from an ancient snowy plateau, its wings glowing with vibrant white and blue flames, symbolizing icy rebirth and eternal purity under a clear winter sky.\n\nBackstory: It heals the land with every beat of its wings.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_057.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Common"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient snowy plateau with icy ruins, clear winter sky, distant snow-capped peaks"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle snow swirls, ethereal icy glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 50
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 20
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 057",
+            "collection_position": "57 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_057.png"
+        }
+    },
+    {
+        "name": "Phoenix of Fiery Renewal (CST-PHX 058)",
+        "description": "A majestic phoenix hovers over an ancient volcanic lake, its wings shimmering with vibrant red and black flames, symbolizing fiery renewal and primal energy under a smoky dawn sky.\n\nBackstory: Its obsidian feathers hide molten cores.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_058.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Legendary"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient volcanic lake with steaming waters, smoky dawn sky, rugged lava fields"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle smoke swirls, ethereal heat haze"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 5
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 85
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 058",
+            "collection_position": "58 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_058.png"
+        }
+    },
+    {
+        "name": "Phoenix of Celestial Mysticism (CST-PHX 059)",
+        "description": "A radiant phoenix ascends from an ancient stone circle, its wings ablaze with vibrant gold and purple flames, symbolizing celestial rebirth and ancient mysticism under a twilight sky.\n\nBackstory: Its flames burn blue yet radiate warmth of hope.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_059.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Rare"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient stone circle with towering monoliths, twilight sky with soft purple hues, distant hills"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle celestial sparkles, ethereal twilight glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 20
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 50
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 059",
+            "collection_position": "59 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_059.png"
+        }
+    },
+    {
+        "name": "Phoenix of Divine Transcendence (CST-PHX 060)",
+        "description": "A majestic phoenix rises from an ancient celestial temple, its wings shimmering with vibrant silver, blue, and gold flames, symbolizing ultimate rebirth and divine transcendence under a starry night sky.\n\nBackstory: Its rebirth marks the start of every age.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_060.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Mythic"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Ancient celestial temple with domed roofs, starry night sky, distant glowing horizons"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle star-like sparkles, ethereal cosmic light"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon \n(MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 3
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 95
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 060",
+            "collection_position": "60 of 60",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_060.png"
+        }
+    },
+    {
+        "name": "Phoenix of Twilight Glory (CST-PHX 061)",
+        "description": "A majestic phoenix ascends amidst a twilight landscape, its wings shimmering with vibrant purple and gold flames, symbolizing the union of day and night in a glorious rebirth.\n\nBackstory: Born at the edge of twilight, this phoenix embodies the harmony of dusk and dawn, rising from ancient ashes to illuminate the sky.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_061.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Legendary"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Twilight sky with soft purple and orange hues, ancient ruins faintly visible below"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle star-like sparkles, ethereal twilight glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon (MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 5
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 85
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 061",
+            "collection_position": "61 of 100",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_061.png"
+        }
+    },
+    {
+        "name": "Phoenix of Emerald Renewal (CST-PHX 062)",
+        "description": "A vibrant phoenix rises from an ancient emerald forest, its wings aglow with lush green and golden flames, symbolizing nature's rebirth and vitality.\n\nBackstory: Emerging from a sacred grove lost to time, this phoenix channels the life force of the forest into a stunning rebirth.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_062.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Epic"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dense emerald forest with towering trees, soft morning mist, distant mountains"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle leaf reflections, ethereal mist glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon (MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 10
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 70
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 062",
+            "collection_position": "62 of 100",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_062.png"
+        }
+    },
+    {
+        "name": "Phoenix of Oceanic Depths (CST-PHX 063)",
+        "description": "A majestic phoenix emerges from the depths of an ancient ocean, its wings shimmering with vibrant blue and silver flames, symbolizing resilience and aquatic rebirth.\n\nBackstory: Rising from the forgotten depths of a sunken kingdom, this phoenix harnesses the power of the sea for a spectacular renewal.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_063.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Legendary"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Deep ocean with swirling currents, faint underwater ruins, soft blue-green hues"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle water reflections, ethereal ocean glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon (MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 5
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 85
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 063",
+            "collection_position": "63 of 100",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_063.png"
+        }
+    },
+    {
+        "name": "Phoenix of Celestial Flames (CST-PHX 064)",
+        "description": "A celestial phoenix soars through a starry night sky, its wings shimmering with vibrant red and silver flames, symbolizing cosmic power and eternal rebirth.\n\nBackstory: Born from the heart of a dying star, this phoenix channels cosmic energy into a breathtaking rebirth.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_064.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Mythic"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Deep cosmic sky with nebulae and distant galaxies"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle starlight reflections, ethereal cosmic glow"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon (MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 3
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 95
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 064",
+            "collection_position": "64 of 100",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_064.png"
+        }
+    },
+    {
+        "name": "Phoenix of Desert Blaze (CST-PHX 065)",
+        "description": "A radiant phoenix rises from a scorching desert, its wings ablaze with vibrant yellow and orange flames, symbolizing endurance and fiery renewal.\n\nBackstory: Forged in the heart of a relentless desert, this phoenix emerges from burning sands to conquer the horizon.",
+        "image": "ipfs://PLACEHOLDER_CID/phoenix_065.png",
+        "external_url": "https://metamibozi.github.io/nft-website/",
+        "seller_fee_basis_points": 5,
+        "fee_recipient": "0x4473e51D2e7F27EFA6Bb60Df422A27b047700004",
+        "attributes": [
+            {
+                "trait_type": "Rarity Level",
+                "value": "Epic"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Scorching desert with golden dunes, faint mirage effects, clear blue sky"
+            },
+            {
+                "trait_type": "Special Effects",
+                "value": "Glowing flame aura, subtle heat haze, ethereal sunlight reflections"
+            },
+            {
+                "trait_type": "Artist",
+                "value": "CONSECTRA design team"
+            },
+            {
+                "trait_type": "Collection",
+                "value": "Rise of CONSECTRA"
+            },
+            {
+                "trait_type": "Blockchain",
+                "value": "Polygon (MATIC)"
+            },
+            {
+                "trait_type": "Token Standard",
+                "value": "ERC-1155"
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Supply",
+                "value": 10
+            },
+            {
+                "display_type": "number",
+                "trait_type": "Rarity Score",
+                "value": 70
+            }
+        ],
+        "properties": {
+            "token_id": "CST-PHX 065",
+            "collection_position": "65 of 100",
+            "sha256_verification": "verified",
+            "file_name": "phoenix_065.png"
+        }
+    }
 ]
