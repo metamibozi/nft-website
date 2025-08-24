@@ -1,50 +1,398 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <title>CONSECTRA NFT Collection</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mythic/Ultra-Rare phoenix series on Polygon — CONSECTRA.">
-  <meta property="og:title" content="CONSECTRA NFT Collection">
-  <meta property="og:description" content="Mythic-grade phoenix reborn in alloy and light.">
-  <meta property="og:image" content="assets/images/og_cover.jpg">
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise of CONSECTRA - NFT Collection</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8b0000;
+            --secondary: #d4af37;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gradient: linear-gradient(135deg, #8b0000 0%, #ff4500 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--secondary);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                       url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Collection Section */
+        .collection {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nft-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .nft-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nft-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .nft-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: linear-gradient(45deg, #333, #555);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 3rem;
+        }
+        
+        .nft-info {
+            padding: 1.5rem;
+        }
+        
+        .nft-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+        
+        .nft-info p {
+            color: #ccc;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .nft-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .rarity {
+            background: var(--gradient);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 2px solid var(--secondary);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .social-links a {
+            color: var(--light);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--secondary);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .nft-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header class="container">
-    <h1>CONSECTRA NFT Collection</h1>
-    <p class="sub">Mythic/Ultra-Rare phoenix series on Polygon</p>
-    <div class="controls">
-      <input id="q" type="search" placeholder="Search name / trait…">
-      <select id="rarity">
-        <option value="">All rarities</option>
-        <option>Mythic</option>
-        <option>Ultra Rare</option>
-        <option>Rare</option>
-      </select>
-      <select id="sort">
-        <option value="newest">Newest</option>
-        <option value="name">Name (A-Z)</option>
-      </select>
-    </div>
-  </header>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Rise of CONSECTRA</div>
+                <div class="nav-links">
+                    <a href="#collection">Collection</a>
+                    <a href="#about">About</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <main class="container">
-    <div id="grid" class="grid"></div>
-  </main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Rise of CONSECTRA</h1>
+                <p>60 Unique Phoenix NFTs on Polygon Blockchain<br>Symbolizing Rebirth, Resilience, and Eternal Transformation</p>
+                <a href="#collection" class="btn">Explore Collection</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Modal -->
-  <div id="overlay" class="overlay hidden">
-    <div class="modal">
-      <button id="close" class="close">×</button>
-      <div id="modal-body"></div>
-    </div>
-  </div>
+    <!-- Collection Section -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <h2 class="section-title">NFT Collection</h2>
+            <div class="nft-grid">
+                <!-- NFT 1 -->
+                <div class="nft-card">
+                    <div class="nft-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="nft-info">
+                        <h3>Fireborn Phoenix</h3>
+                        <p>A majestic phoenix rises from a fiery rebirth, symbolizing resilience and renewal...</p>
+                        <div class="nft-meta">
+                            <span class="rarity">Legendary</span>
+                            <span>#001</span>
+                        </div>
+                    </div>
+                </div>
 
-  <footer class="container foot">
-    <span>© 2025 CONSECTRA — Polygon</span>
-  </footer>
+                <!-- NFT 2 -->
+                <div class="nft-card">
+                    <div class="nft-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="nft-info">
+                        <h3>Radiant Phoenix</h3>
+                        <p>A radiant phoenix emerges from swirling flames, embodying strength and rebirth...</p>
+                        <div class="nft-meta">
+                            <span class="rarity">Rare</span>
+                            <span>#002</span>
+                        </div>
+                    </div>
+                </div>
 
-  <script src="js/app.js"></script>
+                <!-- Daha fazla NFT kartı buraya gelecek -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About the Collection</h2>
+                    <p>The Rise of CONSECTRA collection is a tribute to rebirth, resilience, and innovation, symbolized by the mythical Phoenix. Each piece combines mystical artistry with digital innovation.</p>
+                    <p>Featuring 60 unique NFTs on the Polygon blockchain, this collection represents transformation, power, and elegance through the eternal symbolism of the Phoenix rising from ashes.</p>
+                    <ul>
+                        <li>✓ 60 Unique Digital Artworks</li>
+                        <li>✓ Polygon Blockchain (ERC-1155)</li>
+                        <li>✓ 5% Royalty on Secondary Sales</li>
+                        <li>✓ IPFS Storage for Immutability</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>60</h3>
+                        <p>Unique NFTs</p>
+                    </div>
+                    <div class="stat">
+                        <h3>7</h3>
+                        <p>Rarity Levels</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5%</h3>
+                        <p>Royalty Fee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="logo">Rise of CONSECTRA</div>
+            <p>Digital Art NFT Collection on Polygon Blockchain</p>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-opensea"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <p>&copy; 2024 CONSECTRA Design Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Basit JavaScript için yer tutucu
+        console.log("Rise of CONSECTRA NFT Collection");
+        
+        // Daha sonra NFT verilerini dinamik olarak yükleyeceğiz
+        async function loadNFTs() {
+            try {
+                // Burada IPFS v API bağlantısı yapılacak
+                console.log("NFT data loading...");
+            } catch (error) {
+                console.error("Error loading NFTs:", error);
+            }
+        }
+        
+        // Sayfa yüklendiğinde çalıştır
+        window.addEventListener('load', loadNFTs);
+    </script>
 </body>
 </html>
