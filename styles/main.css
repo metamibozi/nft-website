@@ -1,0 +1,34 @@
+:root{
+  --bg:#0b0b0f; --card:#151521; --muted:#a3a3b2; --text:#f3f3f8; --accent:#7c5cff; --line:#232334;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Arial}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+h1{font-size:36px;margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 18px}
+.controls{display:flex;gap:10px;flex-wrap:wrap}
+.controls input,.controls select{
+  background:#0e0e15;border:1px solid var(--line);color:var(--text);padding:10px 12px;border-radius:10px;min-width:180px
+}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:24px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s transform,.2s border}
+.card:hover{transform:translateY(-2px);border-color:#2b2b3a}
+.thumb{width:100%;height:260px;object-fit:cover;display:block;background:#0c0c12}
+.pad{padding:14px}
+.badge{position:absolute;top:10px;left:10px;background:var(--accent);color:white;font-size:12px;padding:4px 8px;border-radius:999px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.btn{display:inline-block;background:#202031;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:10px;text-decoration:none;font-size:14px}
+.btn.primary{background:var(--accent);border-color:transparent}
+.btn:hover{opacity:.9}
+.title{font-weight:600;margin:6px 0}
+.desc{color:var(--muted);font-size:14px;min-height:44px}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;padding:20px;z-index:40}
+.hidden{display:none}
+.modal{background:#0f0f18;border:1px solid var(--line);border-radius:18px;max-width:950px;width:100%;padding:18px}
+.close{float:right;background:#1b1b2a;border:1px solid var(--line);color:#d9d9e6;border-radius:10px;font-size:20px;line-height:1;padding:6px 10px;cursor:pointer}
+.modal-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:18px}
+.modal img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.traits{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.trait{background:#1b1b2a;border:1px solid var(--line);padding:6px 10px;border-radius:10px;font-size:12px}
+.foot{color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:800px){.modal-grid{grid-template-columns:1fr}}
