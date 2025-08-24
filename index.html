@@ -1,121 +1,32 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rise of CONSECTRA - NFT Collection</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Rise of CONSECTRA</div>
-                <div class="nav-links">
-                    <a href="#collection">Collection</a>
-                    <a href="#about">About</a>
-                    <a href="#roadmap">Roadmap</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </nav>
+<!-- Collection Section -->
+<section id="collection" class="collection">
+    <div class="container">
+        <h2 class="section-title">NFT Collection</h2>
+        
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search NFTs by name, description, or rarity..." class="search-input">
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Rise of CONSECTRA</h1>
-                <p>60 Unique Phoenix NFTs on Polygon Blockchain<br>Symbolizing Rebirth, Resilience, and Eternal Transformation</p>
-                <a href="#collection" class="btn">Explore Collection</a>
-            </div>
+        
+        <!-- Filters -->
+        <div id="filters" class="filters">
+            <!-- Filters will be dynamically added -->
         </div>
-    </section>
-
-    <!-- Collection Section -->
-    <section id="collection" class="collection">
-        <div class="container">
-            <h2 class="section-title">NFT Collection</h2>
-            
-            <!-- Search Box -->
-            <div class="search-box">
-                <input type="text" id="search-input" placeholder="Search NFTs..." class="search-input">
-            </div>
-            
-            <!-- Filters -->
-            <div id="filters" class="filters">
-                <!-- Filters will be dynamically added -->
-            </div>
-            
-            <!-- NFT Grid -->
-            <div id="nft-container" class="nft-grid">
-                <div class="loading">
-                    <i class="fas fa-spinner fa-spin"></i>
-                    <p>Loading NFTs...</p>
-                </div>
-            </div>
+        
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Loading amazing phoenix NFTs...</p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About the Collection</h2>
-                    <p>The Rise of CONSECTRA collection is a tribute to rebirth, resilience, and innovation, symbolized by the mythical Phoenix. Each piece combines mystical artistry with digital innovation.</p>
-                    <p>Featuring 60 unique NFTs on the Polygon blockchain, this collection represents transformation, power, and elegance through the eternal symbolism of the Phoenix rising from ashes.</p>
-                    <ul>
-                        <li>✓ 60 Unique Digital Artworks</li>
-                        <li>✓ Polygon Blockchain (ERC-1155)</li>
-                        <li>✓ 5% Royalty on Secondary Sales</li>
-                        <li>✓ IPFS Storage for Immutability</li>
-                    </ul>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>60</h3>
-                        <p>Unique NFTs</p>
-                    </div>
-                    <div class="stat">
-                        <h3>7</h3>
-                        <p>Rarity Levels</p>
-                    </div>
-                    <div class="stat">
-                        <h3>5%</h3>
-                        <p>Royalty Fee</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="logo">Rise of CONSECTRA</div>
-            <p>Digital Art NFT Collection on Polygon Blockchain</p>
-            
-            <div class="social-links">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-discord"></i></a>
-                <a href="#"><i class="fab fa-opensea"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-            </div>
-            
-            <p>&copy; 2024 CONSECTRA Design Team. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- NFT Modal -->
-    <div id="nft-modal" class="modal">
-        <div class="modal-content">
-            <div id="modal-content"></div>
-        </div>
+        
+        <!-- NFT Grid -->
+        <div id="nft-container" class="nft-grid"></div>
     </div>
+</section>
 
-    <script src="js/app.js"></script>
-</body>
-</html>
+<!-- NFT Modal -->
+<div id="nft-modal" class="modal">
+    <div class="modal-content">
+        <div id="modal-content"></div>
+    </div>
+</div>
