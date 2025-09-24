@@ -16,7 +16,6 @@ const modal = document.getElementById('nft-modal');
 const modalContent = document.getElementById('modal-content');
 const searchInput = document.getElementById('search-input');
 const loadingElement = document.getElementById('loading');
-const nftCountElement = document.getElementById('nft-count');
 
 // Initialize App
 document.addEventListener('DOMContentLoaded', function() {
@@ -54,40 +53,40 @@ async function loadNFTs() {
 
     console.log('Loaded NFTs:', allNFTs.length);
 
-    // ✅ OTOMATİK GÖRSEL İSİM DÖNÜŞTÜRME
+    // Görsel yollarını düzelt
     allNFTs = allNFTs.map((nft, index) => {
-        let imageFilename = nft.image || '';
-        
-        // PNG → WEBP dönüştür
-        if (imageFilename.includes('.png')) {
-            imageFilename = imageFilename.replace('.png', '.webp');
+      let imageFilename = nft.image || '';
+      
+      // PNG → WEBP dönüştür
+      if (imageFilename.includes('.png')) {
+        imageFilename = imageFilename.replace('.png', '.webp');
+      }
+      
+      // "phoenix_001.webp" → "phoenix_001_09_24_2025.webp" formatına çevir
+      if (imageFilename.includes('phoenix_')) {
+        const numberMatch = imageFilename.match(/phoenix_(\d+)\.webp/);
+        if (numberMatch) {
+          const number = numberMatch[1].padStart(3, '0');
+          imageFilename = `phoenix_${number}_09_24_2025.webp`;
         }
-        
-        // "phoenix_001.webp" → "phoenix_001_09_24_2025.webp" formatına çevir
-        if (imageFilename.includes('phoenix_')) {
-            const numberMatch = imageFilename.match(/phoenix_(\d+)\.webp/);
-            if (numberMatch) {
-                const number = numberMatch[1].padStart(3, '0'); // 1 → 001
-                imageFilename = `phoenix_${number}_09_24_2025.webp`;
-            }
-        }
+      }
 
-        const imagePath = imageFilename ? `${CONFIG.imagesBasePath}${imageFilename}` : CONFIG.fallbackImage;
+      const imagePath = imageFilename ? `${CONFIG.imagesBasePath}${imageFilename}` : CONFIG.fallbackImage;
 
-        return {
-            ...nft,
-            image: imagePath,
-            rarity: nft.rarity || 'common',
-            tokenId: nft.tokenId || index + 1,
-            name: nft.name || `CONSECTRA Phoenix #${index + 1}`,
-            description: nft.description || `Unique Phoenix NFT from Rise of CONSECTRA collection.`
-        };
+      return {
+        ...nft,
+        image: imagePath,
+        rarity: nft.rarity || 'common',
+        tokenId: nft.tokenId || index + 1,
+        name: nft.name || `CONSECTRA Phoenix #${index + 1}`,
+        description: nft.description || `Unique Phoenix NFT from Rise of CONSECTRA collection.`
+      };
     });
 
     filteredNFTs = [...allNFTs];
     renderNFTs();
     updateFilterCounts();
-    updateTotalCount();
+    updateNFTCount();
     hideLoading();
     
   } catch (error) {
@@ -95,20 +94,6 @@ async function loadNFTs() {
     showError('Failed to load NFT data: ' + error.message);
     hideLoading();
   }
-}
-
-// Attributes'tan rarity bilgisini çek
-function getRarityFromAttributes(attributes) {
-  if (!attributes || !Array.isArray(attributes)) return "common";
-
-  const rarityAttr = attributes.find(attr =>
-    attr.trait_type && (
-      attr.trait_type.toLowerCase().includes("rarity") ||
-      attr.trait_type.toLowerCase().includes("level")
-    )
-  );
-
-  return rarityAttr ? rarityAttr.value.toLowerCase() : "common";
 }
 
 // Render NFTs
@@ -180,19 +165,19 @@ function setupFilters() {
 
   filtersContainer.innerHTML = filtersHTML;
 
-  // Filtre event listener'larını ekle
+  // Add filter event listeners
   document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       const filter = e.currentTarget.dataset.filter;
       filterNFTs(filter);
 
-      // Aktif state'i güncelle
+      // Update active state
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       e.currentTarget.classList.add('active');
     });
   });
 
-  // Başlangıçta 'all' aktif olsun
+  // Set 'all' as active initially
   document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
 }
 
@@ -223,7 +208,6 @@ function updateFilterCounts() {
     const filterBtn = document.querySelector(`.filter-btn[data-filter="${rarity}"]`);
     
     if (filterBtn) {
-      // Mevcut count span'ını bul veya oluştur
       let countSpan = filterBtn.querySelector('.filter-count');
       if (!countSpan) {
         countSpan = document.createElement('span');
@@ -238,6 +222,7 @@ function updateFilterCounts() {
 
 // Update NFT count display
 function updateNFTCount() {
+  const nftCountElement = document.getElementById('nft-count');
   if (nftCountElement) {
     nftCountElement.textContent = `${filteredNFTs.length} of ${allNFTs.length} NFTs`;
   }
@@ -354,10 +339,7 @@ function searchNFTs(query) {
       (nft.name?.toLowerCase().includes(searchTerm)) ||
       (nft.description?.toLowerCase().includes(searchTerm)) ||
       (nft.tokenId?.toString().includes(searchTerm)) ||
-      (nft.rarity?.toLowerCase().includes(searchTerm)) ||
-      (nft.attributes?.some(attr => 
-        attr.value?.toLowerCase().includes(searchTerm)
-      ))
+      (nft.rarity?.toLowerCase().includes(searchTerm))
     );
   }
 
