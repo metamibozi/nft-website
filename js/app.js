@@ -43,36 +43,56 @@ async function loadNFTs() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    allNFTs = await response.json();
+    const nftsData = await response.json();
+    
+    // JSON yapısını kontrol et
+    if (Array.isArray(nftsData)) {
+      allNFTs = nftsData;
+    } else {
+      allNFTs = [];
+    }
 
-    // JSON yapısına göre NFT'leri işle
+    console.log('Loaded NFTs:', allNFTs.length);
+
+    // ✅ OTOMATİK GÖRSEL İSİM DÖNÜŞTÜRME
     allNFTs = allNFTs.map((nft, index) => {
-      // Görsel yolunu düzelt
-      let imageFilename = nft.image;
-      if (imageFilename && imageFilename.startsWith('ipfs://')) {
-        // ipfs:// kısmını kırp, sadece dosya adı kalsın
-        imageFilename = imageFilename.split('/').pop();
-      }
+        let imageFilename = nft.image || '';
+        
+        // PNG → WEBP dönüştür
+        if (imageFilename.includes('.png')) {
+            imageFilename = imageFilename.replace('.png', '.webp');
+        }
+        
+        // "phoenix_001.webp" → "phoenix_001_09_24_2025.webp" formatına çevir
+        if (imageFilename.includes('phoenix_')) {
+            const numberMatch = imageFilename.match(/phoenix_(\d+)\.webp/);
+            if (numberMatch) {
+                const number = numberMatch[1].padStart(3, '0'); // 1 → 001
+                imageFilename = `phoenix_${number}_09_24_2025.webp`;
+            }
+        }
 
-      return {
-        ...nft,
-        image: imageFilename ? `${CONFIG.imagesBasePath}${imageFilename}` : CONFIG.fallbackImage,
-        rarity: getRarityFromAttributes(nft.attributes),
-        tokenId: nft.tokenId || index + 1,
-        external_url: nft.external_url || 'https://metamibozi.github.io/nft-website/',
-        description: nft.description || `Rise of CONSECTRA Collection - Unique Phoenix NFT #${index + 1}`
-      };
+        const imagePath = imageFilename ? `${CONFIG.imagesBasePath}${imageFilename}` : CONFIG.fallbackImage;
+
+        return {
+            ...nft,
+            image: imagePath,
+            rarity: nft.rarity || 'common',
+            tokenId: nft.tokenId || index + 1,
+            name: nft.name || `CONSECTRA Phoenix #${index + 1}`,
+            description: nft.description || `Unique Phoenix NFT from Rise of CONSECTRA collection.`
+        };
     });
 
     filteredNFTs = [...allNFTs];
-
     renderNFTs();
     updateFilterCounts();
-    updateNFTCount();
+    updateTotalCount();
     hideLoading();
+    
   } catch (error) {
     console.error('Error loading NFTs:', error);
-    showError('Failed to load NFT data. Please check the metadata file.');
+    showError('Failed to load NFT data: ' + error.message);
     hideLoading();
   }
 }
