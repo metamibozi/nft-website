@@ -207,21 +207,28 @@ function filterNFTs(filter) {
 
 // Update filter counts
 function updateFilterCounts() {
-  const counts = {
-    all: allNFTs.length,
-    'ultra rare': allNFTs.filter(nft => nft.rarity === 'ultra rare').length,
-    mythic: allNFTs.filter(nft => nft.rarity === 'mythic').length,
-    legendary: allNFTs.filter(nft => nft.rarity === 'legendary').length,
-    epic: allNFTs.filter(nft => nft.rarity === 'epic').length,
-    rare: allNFTs.filter(nft => nft.rarity === 'rare').length,
-    uncommon: allNFTs.filter(nft => nft.rarity === 'uncommon').length,
-    common: allNFTs.filter(nft => nft.rarity === 'common').length
-  };
-
-  Object.entries(counts).forEach(([rarity, count]) => {
-    const element = document.querySelector(`.filter-count[data-rarity="${rarity}"]`);
-    if (element) {
-      element.textContent = ` (${count})`;
+  const rarities = ['all', 'ultra rare', 'mythic', 'legendary', 'epic', 'rare', 'uncommon', 'common'];
+  
+  rarities.forEach(rarity => {
+    let count;
+    if (rarity === 'all') {
+      count = allNFTs.length;
+    } else {
+      count = allNFTs.filter(nft => nft.rarity && nft.rarity.toLowerCase() === rarity).length;
+    }
+    
+    const filterBtn = document.querySelector(`.filter-btn[data-filter="${rarity}"]`);
+    
+    if (filterBtn) {
+      // Mevcut count span'ını bul veya oluştur
+      let countSpan = filterBtn.querySelector('.filter-count');
+      if (!countSpan) {
+        countSpan = document.createElement('span');
+        countSpan.className = 'filter-count';
+        countSpan.setAttribute('data-rarity', rarity);
+        filterBtn.appendChild(countSpan);
+      }
+      countSpan.textContent = ` (${count})`;
     }
   });
 }
