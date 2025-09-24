@@ -144,7 +144,7 @@ function createNFTCard(nft) {
 
 // Setup Filters
 function setupFilters() {
-    const rarities = ['all', 'mythic', 'legendary', 'epic', 'rare', 'uncommon', 'common'];
+    const rarities = ['all', 'ultra rare', 'mythic', 'legendary', 'epic', 'rare', 'uncommon', 'common'];
     
     const filtersHTML = rarities.map(rarity => `
         <button class="filter-btn" data-filter="${rarity}">
@@ -189,6 +189,7 @@ function filterNFTs(filter) {
 function updateFilterCounts() {
     const counts = {
         all: allNFTs.length,
+        ultra rare: allNFTs.filter(nft => nft.rarity?.toLowerCase() === 'ultra rare').length,
         mythic: allNFTs.filter(nft => nft.rarity?.toLowerCase() === 'mythic').length,
         legendary: allNFTs.filter(nft => nft.rarity?.toLowerCase() === 'legendary').length,
         epic: allNFTs.filter(nft => nft.rarity?.toLowerCase() === 'epic').length,
