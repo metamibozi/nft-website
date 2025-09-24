@@ -47,14 +47,13 @@ async function loadNFTs() {
         
         // Yeni JSON yapısına göre NFT'leri işle
         allNFTs = allNFTs.map((nft, index) => {
-            // Görsel yolunu düzelt - yeni dosya isimlerine göre
-            const imageFilename = nft.image || `phoenix_${String(index + 1).padStart(3, '0')}_09_24_2025.webp`;
-            
-            return {
-                ...nft,
-                image: `${CONFIG.imagesBasePath}${imageFilename}`,
-                rarity: getRarityFromAttributes(nft.attributes),
-                tokenId: nft.tokenId || index + 1,
+  const baseFilename = `phoenix_${String(index + 1).padStart(3, '0')}_09_24_2025.webp`;  // Zorunlu fallback
+  return {
+    ...nft,
+    image: `${CONFIG.imagesBasePath}${baseFilename}`,  // Her zaman local kullan
+    rarity: getRarityFromAttributes(nft.attributes),
+    tokenId: nft.properties?.token_id || `CST-PHX ${String(index + 1).padStart(3, '0')}`,  // Aşağıdaki token ID düzeltmesiyle birleştir
+    // ... diğerleri
                 // Yeni alanları ekle
                 external_url: nft.external_url || 'https://metamibozi.github.io/nft-website/',
                 description: nft.description || `Rise of CONSECTRA Collection - Unique Phoenix NFT #${index + 1}`
