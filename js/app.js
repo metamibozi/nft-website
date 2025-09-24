@@ -48,7 +48,7 @@ async function loadNFTs() {
         // Yeni JSON yapısına göre NFT'leri işle
         allNFTs = allNFTs.map((nft, index) => {
             // Görsel yolunu düzelt - yeni dosya isimlerine göre
-            const imageFilename = nft.image || `phoenix_${String(index + 1).padStart(3, '0')}_08_24_2025.webp`;
+            const imageFilename = nft.image || `phoenix_${String(index + 1).padStart(3, '0')}_09_24_2025.webp`;
             
             return {
                 ...nft,
