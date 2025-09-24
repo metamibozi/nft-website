@@ -168,28 +168,31 @@ function createNFTCard(nft) {
 function setupFilters() {
   const rarities = ['all', 'ultra rare', 'mythic', 'legendary', 'epic', 'rare', 'uncommon', 'common'];
 
-  const filtersHTML = rarities.map(rarity => `
-    <button class="filter-btn" data-filter="${rarity}">
-      ${rarity.charAt(0).toUpperCase() + rarity.slice(1)}
-      <span class="filter-count" data-rarity="${rarity}">0</span>
-    </button>
-  `).join('');
+  const filtersHTML = rarities.map(rarity => {
+    const displayName = rarity === 'all' ? 'All' : rarity.charAt(0).toUpperCase() + rarity.slice(1);
+    return `
+      <button class="filter-btn" data-filter="${rarity}">
+        ${displayName}
+        <span class="filter-count" data-rarity="${rarity}">(0)</span>
+      </button>
+    `;
+  }).join('');
 
   filtersContainer.innerHTML = filtersHTML;
 
-  // Add filter event listeners
+  // Filtre event listener'larını ekle
   document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       const filter = e.currentTarget.dataset.filter;
       filterNFTs(filter);
 
-      // Update active state
+      // Aktif state'i güncelle
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       e.currentTarget.classList.add('active');
     });
   });
 
-  // Set 'all' as active initially
+  // Başlangıçta 'all' aktif olsun
   document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
 }
 
