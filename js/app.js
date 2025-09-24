@@ -76,16 +76,20 @@ async function loadNFTs() {
 
 // Attributes'tan rarity bilgisini çek (yeni yapıya göre)
 function getRarityFromAttributes(attributes) {
-    if (!attributes || !Array.isArray(attributes)) return "Common";
-    
-    const rarityAttr = attributes.find(attr => 
-        attr.trait_type && (
-            attr.trait_type.toLowerCase().includes("rarity") ||
-            attr.trait_type.toLowerCase().includes("level")
-        )
-    );
-    
-    return rarityAttr ? rarityAttr.value : "Common";
+  if (!attributes || !Array.isArray(attributes)) return "Common";
+  const rarityAttr = attributes.find(attr => 
+    attr.trait_type && (
+      attr.trait_type.toLowerCase().includes("rarity") ||
+      attr.trait_type.toLowerCase().includes("level")
+    )
+  );
+  let rarity = rarityAttr ? rarityAttr.value.toLowerCase().trim() : "common";
+  // Normalize: Farklı formatları 'ultra rare'e çevir
+  if (rarity.includes('ultra') && rarity.includes('rare')) {
+    rarity = 'ultra rare';
+  } else if (rarity === 'legendary') rarity = 'legendary';  // Zaten doğru
+  // Diğer mapping'ler: 'epic' → 'epic', vs. (gerekirse ekle)
+  return rarity.charAt(0).toUpperCase() + rarity.slice(1).replace(' Rare', ' rare');  // Display için capitalize, ama filter lowercase bekler
 }
 
 // Render NFTs
