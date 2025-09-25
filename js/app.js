@@ -1,7 +1,7 @@
 // Config
 const CONFIG = {
   metadataPath: './data/nfts.json',
-  imagesBasePath: './images/',
+  imagesBasePath: '/images/',
   fallbackImage: 'https://placehold.co/400x400/6a0dad/FFFFFF/png?text=CONSECTRA+NFT'
 };
 
