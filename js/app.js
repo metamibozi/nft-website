@@ -12,6 +12,64 @@ let allNFTs = [];
 document.addEventListener('DOMContentLoaded', function() {
   console.log('🚀 Loading CONSECTRA NFTs...');
   loadNFTs();
+
+  // YENİ EKLE: Smooth scroll to top on logo click
+  const siteLogo = document.getElementById('site-logo');
+  if (siteLogo) {
+    siteLogo.addEventListener('click', (e) => {
+      e.preventDefault();  // Varsayılan davranışı engelle
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // Yumuşak kaydırma
+      });
+    });
+    siteLogo.style.cursor = 'pointer';  // Tıklanabilir imleç
+    siteLogo.title = 'Scroll to top';  // Tooltip (opsiyonel)
+  }
+
+  // YENİ EKLE: PDF Modal Preview (Certificate butonu için)
+  const pdfModal = document.getElementById('pdf-modal');
+  const pdfIframe = document.getElementById('pdf-iframe');
+  const certificateBtn = document.querySelector('.certificate-btn');
+
+  if (certificateBtn) {
+    certificateBtn.addEventListener('click', (e) => {
+      e.preventDefault();  // Download engelle
+      pdfIframe.src = 'assets/documents/Digital Certificate of Authenticity - Rise of CONSECTRA.pdf';  // PDF path'ini doğrula (dosya adını kontrol et)
+      pdfModal.style.display = 'block';
+      document.body.style.overflow = 'hidden';  // Sayfa scroll'u kilitle
+    });
+  }
+
+  // Modal kapat (X butonu)
+  const closeModalBtn = document.querySelector('.close-modal');
+  if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', () => {
+      pdfModal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+      pdfIframe.src = '';  // Iframe'i temizle
+    });
+  }
+
+  // Modal dışına tıkla kapat
+  if (pdfModal) {
+    pdfModal.addEventListener('click', (e) => {
+      if (e.target === pdfModal) {
+        pdfModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        pdfIframe.src = '';
+      }
+    });
+  }
+
+  // Escape tuşu ile kapat
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && pdfModal && pdfModal.style.display === 'block') {
+      pdfModal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+      pdfIframe.src = '';
+    }
+  });
 });
 
 // Load NFTs from JSON - FIXED VERSION
