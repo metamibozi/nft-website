@@ -1022,3 +1022,39 @@ footer {
   top: 100%;
   left: 0;
 }
+
+/* PDF Modal NFT Gibi Genişlet (Dar Render Önle – İstediğin Düzen Gibi) */
+#pdf-modal .modal-content {
+  max-width: 95vw;  /* Ekran genişliğinin %95'i – NFT modal gibi tam */
+  max-height: 95vh;  /* Ekran yüksekliğinin %95'i */
+  width: 100%;  /* Zorla tam genişlik */
+  padding: 20px;
+}
+#pdf-iframe {
+  width: 100% !important;  /* Tam genişlik, rarity tablosu yan yana */
+  height: 85vh !important;  /* Yüksekliği NFT modal gibi artır, scroll ekle */
+  min-width: 900px;  /* Minimum genişlik, listing (1-90) zoom'suz */
+  border: none;
+  border-radius: 8px;
+}
+#pdf-modal .modal-header {
+  display: flex;  /* NFT modal header gibi */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#pdf-modal h2 {
+  color: white;
+  font-size: 24px;
+}
+
+/* Responsive (Küçük Ekran/Mobil) */
+@media (max-width: 768px) {
+  #pdf-iframe {
+    height: 70vh;  /* Mobil'de kısalt, ama geniş tut */
+    min-width: 100%;  /* Ekranı doldur */
+  }
+  #pdf-modal .modal-content {
+    padding: 10px;
+  }
+}
