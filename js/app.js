@@ -19,8 +19,18 @@ document.addEventListener('click', (e) => {
     const button = e.target.classList.contains('view-details') ? e.target : e.target.closest('.view-details');
     const tokenId = button.dataset.tokenId;
     showNFTDetails(tokenId);
+  };
+
+  // NFT Modal X Butonu Kapatma (Delegation ile – Dinamik Ekleme İçin)
+document.addEventListener('click', (e) => {
+  if (e.target.matches('.close-modal') && e.target.closest('#nft-modal')) {
+    const nftModal = document.getElementById('nft-modal');
+    if (nftModal) {
+      nftModal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
   }
-});
+ });
 
 // NFT Modal kapat
 const nftModal = document.getElementById('nft-modal');
