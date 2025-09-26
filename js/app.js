@@ -12,6 +12,33 @@ let allNFTs = [];
 document.addEventListener('DOMContentLoaded', function() {
   console.log('🚀 Loading CONSECTRA NFTs...');
   loadNFTs();
+  
+  // View Details button event listeners
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('view-details') || e.target.closest('.view-details')) {
+    const button = e.target.classList.contains('view-details') ? e.target : e.target.closest('.view-details');
+    const tokenId = button.dataset.tokenId;
+    showNFTDetails(tokenId);
+  }
+});
+
+// NFT Modal kapat
+const nftModal = document.getElementById('nft-modal');
+if (nftModal) {
+  const nftCloseBtn = nftModal.querySelector('.close-modal');
+  if (nftCloseBtn) {
+    nftCloseBtn.addEventListener('click', () => {
+      nftModal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    });
+  }
+  nftModal.addEventListener('click', (e) => {
+    if (e.target === nftModal) {
+      nftModal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  });
+}
 
   // YENİ EKLE: Smooth scroll to top on logo click
   const siteLogo = document.getElementById('site-logo');
