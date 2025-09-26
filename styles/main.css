@@ -930,3 +930,18 @@ footer {
 .hidden { display: none; }
 .visible { display: block; }
 
+/* FAQ Stilleri (Boşluk, Kenar, Renk Ekle) */
+.faq-section .faq-item {
+  margin-bottom: 2rem;  /* Cevaplar arası boşluk */
+  padding: 1rem;
+  border-left: 4px solid #ff6b35;  /* Phoenix rengi kenar */
+  background: rgba(255,107,53,0.05);  /* Hafif arka plan */
+}
+.faq-item h3 {
+  color: #ff6b35;  /* Başlık rengi */
+  margin-bottom: 0.5rem;
+}
+.faq-item p {
+  line-height: 1.6;  /* Okunaklılık */
+  color: #ccc;
+}
