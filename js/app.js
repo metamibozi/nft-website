@@ -145,21 +145,24 @@ function renderNFTs() {
   }
 
   const html = allNFTs.map(nft => `
-    <div class="nft-card" data-rarity="${nft.rarity}">
-      <div class="nft-image-container">
-        <img src="${nft.image}" alt="${nft.name}" class="nft-image" 
-             onerror="this.src='${CONFIG.fallbackImage}'; console.log('Image failed:', '${nft.image}')">
-      </div>
-      <div class="nft-info">
-        <h3>${nft.name}</h3>
-        <p>${nft.description.substring(0, 150)}...</p>
-        <div class="nft-meta">
-          <span class="rarity rarity-${nft.rarity}">${nft.rarity}</span>
-          <span class="token-id">#${nft.tokenId}</span>
-        </div>
+  <div class="nft-card" data-rarity="${nft.rarity}">
+    <div class="nft-image-container">
+      <img src="${nft.image}" alt="${nft.name}" class="nft-image" 
+           onerror="this.src='${CONFIG.fallbackImage}'; console.log('Image failed:', '${nft.image}')">
+      <div class="nft-overlay">
+        <button class="btn btn-outline view-details" data-token-id="${nft.tokenId}">View Details</button>
       </div>
     </div>
-  `).join('');
+    <div class="nft-info">
+      <h3>${nft.name}</h3>
+      <p>${nft.description.substring(0, 150)}...</p>
+      <div class="nft-meta">
+        <span class="rarity rarity-${nft.rarity}">${nft.rarity}</span>
+        <span class="token-id">#${nft.tokenId}</span>
+      </div>
+    </div>
+  </div>
+`).join('');
 
   container.innerHTML = html;
   console.log('🎨 Rendered', allNFTs.length, 'NFTs');
@@ -208,19 +211,24 @@ function renderFilteredNFTs(filteredNFTs) {
   if (!container) return;
 
   const html = filteredNFTs.map(nft => `
-    <div class="nft-card" data-rarity="${nft.rarity}">
+  <div class="nft-card" data-rarity="${nft.rarity}">
+    <div class="nft-image-container">
       <img src="${nft.image}" alt="${nft.name}" class="nft-image" 
            onerror="this.src='${CONFIG.fallbackImage}'">
-      <div class="nft-info">
-        <h3>${nft.name}</h3>
-        <p>${nft.description.substring(0, 150)}...</p>
-        <div class="nft-meta">
-          <span class="rarity rarity-${nft.rarity}">${nft.rarity}</span>
-          <span class="token-id">#${nft.tokenId}</span>
-        </div>
+      <div class="nft-overlay">
+        <button class="btn btn-outline view-details" data-token-id="${nft.tokenId}">View Details</button>
       </div>
     </div>
-  `).join('');
+    <div class="nft-info">
+      <h3>${nft.name}</h3>
+      <p>${nft.description.substring(0, 150)}...</p>
+      <div class="nft-meta">
+        <span class="rarity rarity-${nft.rarity}">${nft.rarity}</span>
+        <span class="token-id">#${nft.tokenId}</span>
+      </div>
+    </div>
+  </div>
+`).join('');
 
   container.innerHTML = html;
 }
@@ -272,5 +280,69 @@ function showError(message) {
         <button class="btn" onclick="location.reload()">Try Again</button>
       </div>
     `;
+  }
+}
+
+// Show NFT Details in Modal
+function showNFTDetails(tokenId) {
+  const nft = allNFTs.find(n => n.tokenId.toString() === tokenId.toString());
+  if (!nft) return;
+
+  const modalContent = document.getElementById('modal-content');
+  if (!modalContent) return;
+
+  const rarityClass = `rarity-${nft.rarity}`;
+  const imageUrl = nft.image || CONFIG.fallbackImage;
+
+  modalContent.innerHTML = `
+    <div class="modal-header">
+      <h2>${nft.name}</h2>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-image">
+        <img src="${imageUrl}" alt="${nft.name}" onerror="this.src='${CONFIG.fallbackImage}'">
+      </div>
+      <div class="modal-info">
+        <div class="info-section">
+          <h3>Details</h3>
+          <p><strong>Token ID:</strong> ${nft.tokenId}</p>
+          <p><strong>Rarity:</strong> <span class="rarity ${rarityClass}">${nft.rarity}</span></p>
+          <p><strong>Description:</strong> ${nft.description}</p>
+        </div>
+        ${nft.attributes && nft.attributes.length > 0 ? `
+          <div class="info-section">
+            <h3>Attributes</h3>
+            <div class="attributes-grid">
+              ${nft.attributes.map(attr => `
+                <div class="attribute">
+                  <span class="attribute-name">${attr.trait_type}:</span>
+                  <span class="attribute-value">${attr.value}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+        ${nft.properties && Object.keys(nft.properties).length > 0 ? `
+          <div class="info-section">
+            <h3>Properties</h3>
+            <div class="properties-grid">
+              ${Object.entries(nft.properties).map(([key, value]) => `
+                <div class="property">
+                  <span class="property-name">${key}:</span>
+                  <span class="property-value">${value}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+      </div>
+    </div>
+  `;
+
+  const nftModal = document.getElementById('nft-modal');
+  if (nftModal) {
+    nftModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
   }
 }
