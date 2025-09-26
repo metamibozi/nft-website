@@ -27,19 +27,20 @@ document.addEventListener('DOMContentLoaded', function() {
     siteLogo.title = 'Scroll to top';  // Tooltip (opsiyonel)
   }
 
-  // YENİ EKLE: PDF Modal Preview (Certificate butonu için)
-  const pdfModal = document.getElementById('pdf-modal');
-  const pdfIframe = document.getElementById('pdf-iframe');
-  const certificateBtn = document.querySelector('.certificate-btn');
+  // PDF Modal Preview – SADECE kırmızı kutu için
+const pdfModal = document.getElementById('pdf-modal');
+const pdfIframe = document.getElementById('pdf-iframe');
+const previewBtn = document.querySelector('.preview-btn');  // Kırmızı kutu class'ı
 
-  if (certificateBtn) {
-    certificateBtn.addEventListener('click', (e) => {
-      e.preventDefault();  // Download engelle
-      pdfIframe.src = 'assets/documents/Digital Certificate of Authenticity - Rise of CONSECTRA.pdf';  // PDF path'ini doğrula (dosya adını kontrol et)
-      pdfModal.style.display = 'block';
-      document.body.style.overflow = 'hidden';  // Sayfa scroll'u kilitle
-    });
-  }
+if (previewBtn) {
+  previewBtn.addEventListener('click', (e) => {
+    e.preventDefault();  // Download engelle
+    pdfIframe.src = 'assets/documents/Digital Certificate of Authenticity - Rise of CONSECTRA.pdf';
+    pdfModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  });
+  previewBtn.title = 'Click to Preview';  // Hover tooltip
+}
 
   // Modal kapat (X butonu)
   const closeModalBtn = document.querySelector('.close-modal');
