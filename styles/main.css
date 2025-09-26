@@ -929,3 +929,96 @@ footer {
 .mb-2 { margin-bottom: 2rem; }
 .hidden { display: none; }
 .visible { display: block; }
+
+/* YENİ EKLE: NFT View Details Buton ve Overlay Stilleri */
+.nft-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.nft-image-container:hover .nft-overlay {
+  opacity: 1;
+}
+.view-details {
+  background: rgba(255,255,255,0.9);
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.view-details:hover {
+  background: white;
+}
+
+/* NFT Modal Stilleri (View Details pop-up için) */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal-body {
+  display: flex;
+  gap: 20px;
+}
+.modal-image {
+  flex: 1;
+  max-width: 400px;
+}
+.modal-info {
+  flex: 1;
+}
+.info-section {
+  margin-bottom: 20px;
+}
+.attributes-grid, .properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.attribute, .property {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+}
+.attribute-name, .property-name {
+  font-weight: bold;
+}
+
+/* PDF Modal Stilleri (Certificate preview için – önceki eklemelerden) */
+.close-modal {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ff6b35;
+}
+.close-modal:hover {
+  color: #dc3545;  /* Kırmızı hover */
+}
+#pdf-iframe {
+  border: none;
+  border-radius: 4px;
+}
+.preview-btn:hover::after {
+  content: "Click to Preview";  /* Tooltip kırmızı kutu için */
+  position: absolute;
+  background: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
