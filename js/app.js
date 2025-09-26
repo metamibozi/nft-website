@@ -22,10 +22,16 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// NFT Modal kapat (dış tık kalır, X butonu delegation ile çalışır)
+// NFT Modal kapat
 const nftModal = document.getElementById('nft-modal');
 if (nftModal) {
-  // Dış tık kapat (kalsın)
+  const nftCloseBtn = nftModal.querySelector('.close-modal');
+  if (nftCloseBtn) {
+    nftCloseBtn.addEventListener('click', () => {
+      nftModal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    });
+  }
   nftModal.addEventListener('click', (e) => {
     if (e.target === nftModal) {
       nftModal.style.display = 'none';
@@ -33,17 +39,6 @@ if (nftModal) {
     }
   });
 }
-
-// X butonu için delegation (dinamik eklenen butonlar için)
-document.body.addEventListener('click', (e) => {
-  if (e.target.classList.contains('close-modal') && e.target.closest('#nft-modal')) {
-    const nftModal = document.getElementById('nft-modal');
-    if (nftModal) {
-      nftModal.style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-  }
-});
 
   // YENİ EKLE: Smooth scroll to top on logo click
   const siteLogo = document.getElementById('site-logo');
